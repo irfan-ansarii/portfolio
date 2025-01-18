@@ -27,10 +27,6 @@ export const DATA = {
       label: "Contact",
       href: "/#contact",
     },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
   ],
   name: "Irfan Ansari",
   initials: "IA",
@@ -125,7 +121,7 @@ export const DATA = {
       start: "January 2019",
       end: "April 2019",
       description:
-        "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
+        "- Led end-to-end dynamic WordPress site development. \n - Crafted custom theme matching branding and functions.\n - Collaborated with design team on appealing, user-friendly design.\n - Efficiently coordinated across design, dev, and SEO teams.",
     },
   ],
   education: [
