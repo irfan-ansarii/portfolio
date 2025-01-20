@@ -42,14 +42,14 @@ export function ProjectCard({
   className,
 }: Props) {
   return (
-    <Card
+    <div
       className={
-        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
+        "flex flex-col overflow-hidden transition-all duration-300 ease-out h-full border-r  border-t"
       }
     >
       <Link
         href={href || "#"}
-        className={cn("block cursor-pointer", className)}
+        className={cn("block cursor-pointer p-4 sm:p-8", className)}
       >
         {video && (
           <video
@@ -71,7 +71,7 @@ export function ProjectCard({
           />
         )}
       </Link>
-      <CardHeader className="px-2">
+      <CardHeader className="px-4 sm:px-8">
         <div className="space-y-1">
           <CardTitle className="mt-1 text-base">{title}</CardTitle>
           <time className="font-sans text-xs">{dates}</time>
@@ -83,7 +83,7 @@ export function ProjectCard({
           </Markdown>
         </div>
       </CardHeader>
-      <CardContent className="mt-auto flex flex-col px-2">
+      <CardContent className="mt-auto flex flex-col px-4 sm:px-8">
         {tags && tags.length > 0 && (
           <div className="mt-2 flex flex-wrap gap-1 max-w-[300px]">
             {tags?.map((tag) => (
@@ -98,21 +98,24 @@ export function ProjectCard({
           </div>
         )}
       </CardContent>
-      <CardFooter className="px-2 pb-2">
-        {links && links.length > 0 && (
-          <div className="flex flex-row flex-wrap items-start gap-1">
-            {links?.map((link, idx) => (
-              <Link href={link?.href} key={idx} target="_blank">
-                <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
-                  {link.icon}
-                  {link.type}
-                </Badge>
-              </Link>
-            ))}
-          </div>
-        )}
-      </CardFooter>
-      <BorderBeam size={250} duration={12} delay={9} />
-    </Card>
+
+      {links && links.length > 0 && (
+        <CardFooter className="pt-4 flex flex-row flex-wrap items-start">
+          {links?.map((link, idx) => (
+            <Link
+              href={link?.href}
+              key={idx}
+              target="_blank"
+              className={`inline-flex gap-1 items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 flex-1 text-xs rounded-none shadow-none hover:bg-muted/20 ${
+                idx === 1 ? "bg-muted/60" : "bg-muted/20"
+              }`}
+            >
+              {link.icon}
+              {link.type}
+            </Link>
+          ))}
+        </CardFooter>
+      )}
+    </div>
   );
 }

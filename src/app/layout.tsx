@@ -56,7 +56,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="scroll-smooth">
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className="scroll-smooth scroll-p-[63px]	"
+    >
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
@@ -66,14 +70,12 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
             <NavbarTop />
-            <div className="px-6 max-w-3xl mx-auto">
-              <BlurFade delay={0.2}>
-                <main className="flex flex-col min-h-[100dvh] pb-10 sm:pb-20 border-x flex flex-col">
-                  {children}
-                </main>
-              </BlurFade>
-            </div>
-            <NavbarBottom />
+
+            <BlurFade delay={0.2} yOffset={0}>
+              <main className="flex flex-col">{children}</main>
+            </BlurFade>
+
+            {/* <NavbarBottom /> */}
           </TooltipProvider>
         </ThemeProvider>
       </body>
