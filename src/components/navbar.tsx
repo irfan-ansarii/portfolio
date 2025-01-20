@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import BlurFade from "@/components/magicui/blur-fade";
 
-const NavbarTop = () => {
+const Navbar = () => {
   return (
     <div className="sticky inset-x-0 top-0 z-10 flex">
       <div className="pointer-events-auto mx-auto flex min-h-full h-full items-center transform-gpu w-full">
@@ -29,7 +29,7 @@ const NavbarTop = () => {
               <div className="absolute w-52 right-0 transition duration-500 invisible group-hover:visible">
                 <div className="border-l border-b px-6 py-10 rounded-b-xl relative bg-background shadow-lg">
                   <ul className="flex flex-col">
-                    {DATA.navs.map((item) => (
+                    {DATA.navbar.map((item) => (
                       <li key={item.href}>
                         <Link
                           href={item.href}
@@ -50,4 +50,4 @@ const NavbarTop = () => {
   );
 };
 
-export default NavbarTop;
+export default Navbar;

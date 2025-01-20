@@ -1,4 +1,3 @@
-import NavbarBottom from "@/components/navbar-bottom";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
@@ -6,7 +5,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
-import NavbarTop from "@/components/navbar-top";
+import Navbar from "@/components/navbar";
 import BlurFade from "@/components/magicui/blur-fade";
 
 const fontSans = FontSans({
@@ -69,13 +68,13 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
-            <NavbarTop />
+            <Navbar />
 
             <BlurFade delay={0.2} yOffset={0}>
               <main className="flex flex-col">{children}</main>
             </BlurFade>
 
-            {/* <NavbarBottom /> */}
+            <div className="fixed bottom-0 inset-x-0 h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background"></div>
           </TooltipProvider>
         </ThemeProvider>
       </body>

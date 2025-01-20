@@ -1,6 +1,5 @@
 import { Badge } from "@/components/ui/badge";
 import {
-  Card,
   CardContent,
   CardFooter,
   CardHeader,
@@ -10,7 +9,6 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
-import { BorderBeam } from "@/components/magicui/border-beam";
 
 interface Props {
   title: string;
