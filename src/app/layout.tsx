@@ -74,7 +74,7 @@ export default function RootLayout({
               <main className="flex flex-col">{children}</main>
             </BlurFade>
 
-            <div className="fixed bottom-0 inset-x-0 h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background"></div>
+            <div className="fixed bottom-0 inset-x-0 pointer-events-none h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background"></div>
           </TooltipProvider>
         </ThemeProvider>
       </body>

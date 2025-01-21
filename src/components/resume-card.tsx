@@ -1,13 +1,14 @@
 "use client";
 
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
-import Link from "next/link";
-import React from "react";
 import Markdown from "react-markdown";
 
 interface ResumeCardProps {
@@ -51,10 +52,13 @@ export const ResumeCard = ({
         <div className="flex-none">
           <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
             <AvatarImage
+              asChild
               src={logoUrl}
               alt={altText}
               className="object-contain"
-            />
+            >
+              <Image src={logoUrl} alt={altText} width={50} height={50} />
+            </AvatarImage>
             <AvatarFallback>{altText[0]}</AvatarFallback>
           </Avatar>
         </div>

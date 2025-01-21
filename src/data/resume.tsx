@@ -1,4 +1,30 @@
-import { Icons } from "@/components/icons";
+import {
+  Github,
+  Globe,
+  Instagram,
+  Linkedin,
+  Mail,
+  Twitter,
+} from "lucide-react";
+import {
+  SiDocker,
+  SiExpress,
+  SiGithub,
+  SiInstagram,
+  SiLiquibase,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPhp,
+  SiPostgresql,
+  SiPrisma,
+  SiReact,
+  SiShopify,
+  SiTailwindcss,
+  SiTypescript,
+  SiVercel,
+  SiWordpress,
+  SiX,
+} from "@icons-pack/react-simple-icons";
 
 export const DATA = {
   navbar: [
@@ -38,46 +64,18 @@ export const DATA = {
     "Full-Stack developer with 7 years of experience in development and management of web applications. A team player known for collaborative efforts, I possess the confidence to grasp project requirements, design solutions that align with specific needs, and consistently deliver optimal outcomes",
   avatarUrl: "/me.png",
   skills: [
-    "React",
-    "Next.js",
-    "Typescript",
-    "Node.js",
-    "Python",
-    "Go",
-    "Postgres",
-    "Docker",
-    "Kubernetes",
-    "Java",
-    "C++",
-    "PHP",
-  ],
-
-  contact: [
-    {
-      name: "Email",
-      url: "#",
-      icon: Icons.email,
-      navbar: true,
-    },
-    {
-      name: "X",
-      url: "https://dub.sh/dillion-twitter",
-      icon: Icons.x,
-      navbar: true,
-    },
-    {
-      name: "LinkedIn",
-      url: "https://dub.sh/dillion-linkedin",
-      icon: Icons.linkedin,
-
-      navbar: true,
-    },
-    {
-      name: "GitHub",
-      url: "https://dub.sh/dillion-github",
-      icon: Icons.github,
-      navbar: true,
-    },
+    { icon: SiReact, name: "React" },
+    { icon: SiNextdotjs, name: "Next.js" },
+    { icon: SiTypescript, name: "TypeScript" },
+    { icon: SiNodedotjs, name: "Node.js" },
+    { icon: SiExpress, name: "Express" },
+    { icon: SiPrisma, name: "Prisma" },
+    { icon: SiPostgresql, name: "PostgreSQL" },
+    { icon: SiDocker, name: "Docker" },
+    { icon: SiTailwindcss, name: "Tailwind" },
+    { icon: SiPhp, name: "PHP" },
+    { icon: SiWordpress, name: "WordPress" },
+    { icon: SiShopify, name: "Shopify" },
   ],
 
   work: [
@@ -186,7 +184,7 @@ export const DATA = {
         {
           type: "Website",
           href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Globe className="size-3" />,
         },
       ],
       image: "",
@@ -214,12 +212,12 @@ export const DATA = {
         {
           type: "Website",
           href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Globe className="size-3" />,
         },
         {
           type: "Source",
           href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
+          icon: <Github className="size-3" />,
         },
       ],
       image: "",
@@ -247,12 +245,12 @@ export const DATA = {
         {
           type: "Website",
           href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Globe className="size-3" />,
         },
         {
           type: "Source",
           href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
+          icon: <Github className="size-3" />,
         },
       ],
       image: "",
@@ -280,12 +278,34 @@ export const DATA = {
         {
           type: "Website",
           href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Globe className="size-3" />,
         },
       ],
       image: "",
       video:
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+    },
+  ],
+  contact: [
+    {
+      name: "Email",
+      url: "#",
+      icon: SiInstagram,
+    },
+    {
+      name: "X",
+      url: "https://dub.sh/dillion-twitter",
+      icon: SiX,
+    },
+    {
+      name: "LinkedIn",
+      url: "https://dub.sh/dillion-linkedin",
+      icon: Linkedin,
+    },
+    {
+      name: "GitHub",
+      url: "https://dub.sh/dillion-github",
+      icon: SiGithub,
     },
   ],
 } as const;

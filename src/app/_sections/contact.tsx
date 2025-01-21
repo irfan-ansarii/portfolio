@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import { DATA } from "@/data/resume";
-import { ArrowUpRight } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import BlurFade from "@/components/magicui/blur-fade";
 import FlickeringGrid from "@/components/magicui/flickering-grid";
+import ContactForm from "@/components/contact-form";
 
 const BLUR_FADE_DELAY = 0.18;
 const ContactSection = () => {
@@ -18,6 +19,7 @@ const ContactSection = () => {
           className="w-full h-full -z-20 absolute inset-0 size-full"
           color="#262626"
         />
+
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full ">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
@@ -41,21 +43,21 @@ const ContactSection = () => {
       </div>
       <div className="grid grid-cols-4 border-x border-t divide-x">
         {DATA.contact.map((con, idx) => (
-          <a href="#" className="px-8 py-12 relative group flex justify-center">
-            <div className="opacity-10 group-hover:opacity-100 transition-opacity">
+          <a
+            key={con.name}
+            href="javascript:void(0)"
+            className="px-8 py-12 relative group flex justify-center"
+          >
+            <div className="opacity-10 transition-opacity">
               <con.icon className="size-16" />
             </div>
-            <div className="absolute inset-0 bottom-0 group-hover:opacity-50 opacity-0 bg-muted/80 transition-opacity">
-              <div className="flex justify-between p-4 mt-auto">
-                <span>{con.name}</span>
-                <span>
-                  <ArrowUpRight className="size-4" />
-                </span>
-              </div>
+            <div className="absolute inset-0 bottom-0 group-hover:opacity-100 backdrop-blur-2xl opacity-0 bg-muted/50 transition-opacity flex items-center justify-center">
+              <ExternalLink className="size-5" />
             </div>
           </a>
         ))}
       </div>
+      <ContactForm />
     </section>
   );
 };
