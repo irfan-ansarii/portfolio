@@ -1,17 +1,9 @@
-import {
-  Github,
-  Globe,
-  Instagram,
-  Linkedin,
-  Mail,
-  Twitter,
-} from "lucide-react";
+import { Github, Globe, Linkedin } from "lucide-react";
 import {
   SiDocker,
   SiExpress,
   SiGithub,
   SiInstagram,
-  SiLiquibase,
   SiNextdotjs,
   SiNodedotjs,
   SiPhp,
@@ -21,7 +13,6 @@ import {
   SiShopify,
   SiTailwindcss,
   SiTypescript,
-  SiVercel,
   SiWordpress,
   SiX,
 } from "@icons-pack/react-simple-icons";
@@ -81,27 +72,24 @@ export const DATA = {
   work: [
     {
       company: "Goldys Nestt",
-      href: "https://atomic.finance",
-      badges: [],
-      location: "Remote",
+      href: "https://goldysnestt.com",
       title: "Full-Stack Developer",
       logoUrl: "/goldys.png",
-      start: "May 2021",
-      end: "Oct 2022",
+      start: "May 2023",
+      end: "Present",
       description: `- Developed a custom inventory and POS management system using Next.js, Hono.js, ShadCN, PostgreSQL, and Drizzle ORM, resulting in an 80% improvement in processing speed.
       \n- Managed and optimized a high-performance Shopify site, enhancing conversion rates by 25% through implementing new features.
       \n- Collaborated with marketing and design teams to enhance functionality, driving a 15% increase in user engagement..
 `,
     },
     {
-      company: "DigiAcai Pvt. Ltd.",
+      company: "DigiAcai",
       badges: [],
-      href: "https://shopify.com",
-      location: "Remote",
+      href: "https://digiacai.com",
       title: "Wordpress & Shopify Developer",
       logoUrl: "/digiacai.png",
-      start: "January 2021",
-      end: "April 2021",
+      start: "June 2022",
+      end: "April 2023",
       description: `- Managed and optimized 15+ client websites on WordPress and Shopify, boosting website load speed by 40%.
       \n- Designed and implemented new features to align with client goals, achieving a 90% satisfaction rate.
       \n- Enhanced user experience through responsive designs, resulting in a 20% increase in website traffic.
@@ -109,13 +97,11 @@ export const DATA = {
     },
     {
       company: "Priyanka Gill",
-      href: "https://splunk.com",
-      badges: [],
-      location: "San Jose, CA",
+      href: "https://priyankagill.com",
       title: "Wordpress Developer",
       logoUrl: "/pg.png",
-      start: "January 2019",
-      end: "April 2019",
+      start: "August 2020",
+      end: "May 2022",
       description: `- Built WordPress sites from the ground up, including custom theme development, delivering high-performance websites.
       \n- Designed and developed React-based websites tailored to specific requirements.
       \n- Optimized SEO, driving a significant increase in organic traffic.
@@ -139,8 +125,6 @@ export const DATA = {
       degree: "Pro Backend Developer Course - Express.js",
       description: "Completed 40+ hours of hands-on API development training.",
       logoUrl: "/waterloo.png",
-      start: "2016",
-      end: "2021",
     },
     {
       school: "Udemy",
@@ -148,8 +132,6 @@ export const DATA = {
       degree: "React Ecommerce Site Development",
       description: "Mastered advanced React and Shopify integration.",
       logoUrl: "/laurier.png",
-      start: "2016",
-      end: "2021",
     },
     {
       school: "Oxford Software Institute",
@@ -157,8 +139,6 @@ export const DATA = {
       degree: "C, C++, Java",
       description: "Gained a strong foundation in object-oriented programming.",
       logoUrl: "/ib.png",
-      start: "2012",
-      end: "2016",
     },
   ],
   projects: [
