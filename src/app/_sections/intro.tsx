@@ -1,6 +1,5 @@
 import React from "react";
 import { DATA } from "@/data/resume";
-import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
@@ -14,7 +13,6 @@ const IntroSection = () => {
             <BlurFadeText
               delay={BLUR_FADE_DELAY}
               className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-              yOffset={0}
               text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
             />
             <BlurFadeText
@@ -23,12 +21,11 @@ const IntroSection = () => {
               text={DATA.description}
             />
           </div>
-          <BlurFade delay={BLUR_FADE_DELAY} yOffset={0}>
-            <Avatar className="size-32 border">
-              <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-              <AvatarFallback>{DATA.initials}</AvatarFallback>
-            </Avatar>
-          </BlurFade>
+
+          <Avatar className="size-32 border">
+            <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+            <AvatarFallback>{DATA.initials}</AvatarFallback>
+          </Avatar>
         </div>
       </div>
     </section>

@@ -2,7 +2,6 @@ import { DATA } from "@/data/resume";
 import { Grip, Home } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import BlurFade from "@/components/magicui/blur-fade";
 
 const Navbar = () => {
   return (
@@ -10,11 +9,7 @@ const Navbar = () => {
       <div className="pointer-events-auto mx-auto flex min-h-full h-full items-center transform-gpu w-full">
         <header className="container">
           <div className="absolute pointer-events-none z-20 top-0 inset-x-0 h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_bottom,black,transparent)] dark:bg-background"></div>
-          <BlurFade
-            delay={0.08}
-            yOffset={0}
-            className="flex justify-between h-16 border-x backdrop-blur-lg border-b"
-          >
+          <div className="flex justify-between h-16 border-x backdrop-blur-lg border-b">
             <Link href="/" className="h-16 px-6 inline-flex gap-1 items-center">
               <Home className="w-5 h-5" />
             </Link>
@@ -43,7 +38,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-          </BlurFade>
+          </div>
         </header>
       </div>
     </div>

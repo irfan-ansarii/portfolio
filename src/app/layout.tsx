@@ -6,7 +6,6 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
-import BlurFade from "@/components/magicui/blur-fade";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -70,9 +69,7 @@ export default function RootLayout({
           <TooltipProvider delayDuration={0}>
             <Navbar />
 
-            <BlurFade delay={0.2} yOffset={0}>
-              <main className="flex flex-col">{children}</main>
-            </BlurFade>
+            <main className="snap-y [&>*:snap-start]">{children}</main>
 
             <div className="fixed bottom-0 inset-x-0 pointer-events-none h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background"></div>
           </TooltipProvider>

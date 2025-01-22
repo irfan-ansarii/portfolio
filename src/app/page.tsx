@@ -13,7 +13,9 @@ export default function Page() {
       <AboutSection />
       <WorkSection />
       <EducationSection />
+
       <SkillsSection />
+
       <ProjectsSection />
       <ContactSection />
       {/* empty space */}

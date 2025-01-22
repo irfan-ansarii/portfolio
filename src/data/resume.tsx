@@ -61,7 +61,7 @@ export const DATA = {
   description:
     "Building powerful applications with precision and passion, from front-end finesse to back-end brilliance.",
   summary:
-    "Full-Stack developer with 7 years of experience in development and management of web applications. A team player known for collaborative efforts, I possess the confidence to grasp project requirements, design solutions that align with specific needs, and consistently deliver optimal outcomes",
+    "Full Stack Developer with expertise in building scalable web applications, intuitive interfaces, and efficient back-end solutions. Strong problem-solving abilities, keen attention to detail, and a track record of delivering projects on time. Skilled at collaborating with cross-functional teams to achieve project goals.",
   avatarUrl: "/me.png",
   skills: [
     { icon: SiReact, name: "React" },
@@ -80,42 +80,6 @@ export const DATA = {
 
   work: [
     {
-      company: "Minis LLP",
-      href: "https://atomic.finance",
-      badges: [],
-      location: "Remote",
-      title: "Full-Stack Developer",
-      logoUrl: "/minis.png",
-      start: "May 2021",
-      end: "Oct 2022",
-      description:
-        "- Maintain and enhance the functionality, performance, and security of the company’s website.\n - Develop and implement new software solutions based on the company’s requirements and business objectives.\n - Collaborate with cross-functional teams to gather requirements and deliver tailored web-based applications.\n - Ensure seamless integration between front-end and back-end systems for an optimized user experience. \n - Debug, troubleshoot, and resolve technical issues to maintain system reliability. \n - Stay updated with industry trends and technologies to suggest improvements and innovative solutions. \n - Document development process, codebases, and application changes for future reference.",
-    },
-    {
-      company: "DigiAcai Pvt. Ltd.",
-      badges: [],
-      href: "https://shopify.com",
-      location: "Remote",
-      title: "Full-Stack Developer",
-      logoUrl: "/digiacai.png",
-      start: "January 2021",
-      end: "April 2021",
-      description:
-        "- Enhanced the company's website, optimizing speed and ensuring a superior user experience.\n - Added engaging elements, making the website user-friendly and exciting.\n - Collaborated effectively with teams to meet client needs and implement improvements on both Shopify and WordPress websites.\n - Demonstrated proficiency in both WordPress and Shopify, tailoring solutions for each project's unique requirements.\n - Delivered high-quality results for successful client projects.",
-    },
-    {
-      company: "Priyanka Gill",
-      href: "https://splunk.com",
-      badges: [],
-      location: "San Jose, CA",
-      title: "Full-Stack Developer",
-      logoUrl: "/pg.png",
-      start: "January 2019",
-      end: "April 2019",
-      description:
-        "- Led end-to-end dynamic WordPress site development. \n - Crafted custom theme matching branding and functions.\n - Collaborated with design team on appealing, user-friendly design.\n - Efficiently coordinated across design, dev, and SEO teams.",
-    },
-    {
       company: "Goldys Nestt",
       href: "https://atomic.finance",
       badges: [],
@@ -124,15 +88,47 @@ export const DATA = {
       logoUrl: "/goldys.png",
       start: "May 2021",
       end: "Oct 2022",
-      description:
-        "- Maintain and enhance the functionality, performance, and security of the company’s website.\n - Develop and implement new software solutions based on the company’s requirements and business objectives.\n - Collaborate with cross-functional teams to gather requirements and deliver tailored web-based applications.\n - Ensure seamless integration between front-end and back-end systems for an optimized user experience. \n - Debug, troubleshoot, and resolve technical issues to maintain system reliability. \n - Stay updated with industry trends and technologies to suggest improvements and innovative solutions. \n - Document development process, codebases, and application changes for future reference.",
+      description: `- Developed a custom inventory and POS management system using Next.js, Hono.js, ShadCN, PostgreSQL, and Drizzle ORM, resulting in an 80% improvement in processing speed.
+      \n- Managed and optimized a high-performance Shopify site, enhancing conversion rates by 25% through implementing new features.
+      \n- Collaborated with marketing and design teams to enhance functionality, driving a 15% increase in user engagement..
+`,
+    },
+    {
+      company: "DigiAcai Pvt. Ltd.",
+      badges: [],
+      href: "https://shopify.com",
+      location: "Remote",
+      title: "Wordpress & Shopify Developer",
+      logoUrl: "/digiacai.png",
+      start: "January 2021",
+      end: "April 2021",
+      description: `- Managed and optimized 15+ client websites on WordPress and Shopify, boosting website load speed by 40%.
+      \n- Designed and implemented new features to align with client goals, achieving a 90% satisfaction rate.
+      \n- Enhanced user experience through responsive designs, resulting in a 20% increase in website traffic.
+`,
+    },
+    {
+      company: "Priyanka Gill",
+      href: "https://splunk.com",
+      badges: [],
+      location: "San Jose, CA",
+      title: "Wordpress Developer",
+      logoUrl: "/pg.png",
+      start: "January 2019",
+      end: "April 2019",
+      description: `- Built WordPress sites from the ground up, including custom theme development, delivering high-performance websites.
+      \n- Designed and developed React-based websites tailored to specific requirements.
+      \n- Optimized SEO, driving a significant increase in organic traffic.
+`,
     },
   ],
   education: [
     {
       school: "Sikkim Manipal University",
       href: "https://buildspace.so",
-      degree: "Bachelor of Computer Application",
+      degree: "Bachelor of Computer Applications - BCA",
+      description:
+        "Computer/Information Technology Administration and Management",
       logoUrl: "/buildspace.jpg",
       start: "2023",
       end: "2024",
@@ -140,7 +136,8 @@ export const DATA = {
     {
       school: "Learn Code Online",
       href: "https://uwaterloo.ca",
-      degree: "Pro Backend Developer Course",
+      degree: "Pro Backend Developer Course - Express.js",
+      description: "Completed 40+ hours of hands-on API development training.",
       logoUrl: "/waterloo.png",
       start: "2016",
       end: "2021",
@@ -149,6 +146,7 @@ export const DATA = {
       school: "Udemy",
       href: "https://wlu.ca",
       degree: "React Ecommerce Site Development",
+      description: "Mastered advanced React and Shopify integration.",
       logoUrl: "/laurier.png",
       start: "2016",
       end: "2021",
@@ -157,6 +155,7 @@ export const DATA = {
       school: "Oxford Software Institute",
       href: "https://ibo.org",
       degree: "C, C++, Java",
+      description: "Gained a strong foundation in object-oriented programming.",
       logoUrl: "/ib.png",
       start: "2012",
       end: "2016",

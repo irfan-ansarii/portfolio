@@ -2,11 +2,9 @@ import React from "react";
 import Link from "next/link";
 import { DATA } from "@/data/resume";
 import { ExternalLink } from "lucide-react";
-import BlurFade from "@/components/magicui/blur-fade";
 import FlickeringGrid from "@/components/magicui/flickering-grid";
 import ContactForm from "@/components/contact-form";
 
-const BLUR_FADE_DELAY = 0.18;
 const ContactSection = () => {
   return (
     <section id="contact" className="container">
@@ -21,24 +19,22 @@ const ContactSection = () => {
         />
 
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full ">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Stay Connected
-              </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
-                <Link
-                  href={DATA.contact[0].url}
-                  className="text-blue-500 hover:underline"
-                >
-                  with a direct question on twitter
-                </Link>
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
-              </p>
-            </div>
-          </BlurFade>
+          <div className="space-y-3">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              Stay Connected
+            </h2>
+            <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Want to chat? Just shoot me a dm{" "}
+              <Link
+                href={DATA.contact[0].url}
+                className="text-blue-500 hover:underline"
+              >
+                with a direct question on twitter
+              </Link>
+              and I&apos;ll respond whenever I can. I will ignore all
+              soliciting.
+            </p>
+          </div>
         </div>
       </div>
       <div className="grid grid-cols-4 border-x border-t divide-x">

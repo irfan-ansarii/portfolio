@@ -105,7 +105,7 @@ export const ResumeCard = ({
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className="mt text-xs sm:text-sm"
             >
               <Markdown className="prose max-w-full text-pretty  text-sm text-muted-foreground dark:prose-invert">
                 {description}

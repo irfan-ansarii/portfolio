@@ -1,6 +1,6 @@
 "use client";
 import React, { FormEvent, useState } from "react";
-import { Send } from "lucide-react";
+import { Send, X } from "lucide-react";
 
 const ContactForm = () => {
   const [message, setMessage] = useState("");
@@ -15,6 +15,7 @@ const ContactForm = () => {
     setTimeout(() => {
       setLoading(false);
       setSuccess(true);
+      setMessage("");
     }, 1000);
   };
   return (
@@ -29,20 +30,32 @@ const ContactForm = () => {
           className="flex-1 px-8 bg-background text-sm outline-none"
         />
         <button
-          className={`px-4 w-1/4 border-l outline-none h-14 bg-muted/20 hover:bg-muted/60 transition-all text-sm inline-flex items-center justify-center gap-2 ${
-            disabled ? "cursor-not-allowed	text-muted-foreground" : ""
+          className={`px-4 w-1/4 border-l outline-none h-14 bg-muted/20 transition-all text-sm inline-flex items-center justify-center gap-2 ${
+            disabled
+              ? "text-muted-foreground hover:bg-muted/20"
+              : "hover:bg-muted/60"
           }`}
+          disabled={disabled}
         >
           <Send className="size-4" />
           {loading ? "Sending..." : "Send"}
         </button>
       </form>
-
-      <div className="absolute inset-0 flex items-center">
-        <p className="text-green-600 text-sm">
-          Thankyou for you message, I'll get back to you soon.
-        </p>
-      </div>
+      {success && (
+        <div className="absolute inset-0 bg-background">
+          <div className="relative flex items-center h-full px-4 sm:px-8">
+            <p className="text-sm text-green-700">
+              Thankyou for you message, I'll get back to you soon.
+            </p>
+          </div>
+          <button
+            className="absolute opacity-50 hover:opacity-80 transition-opacity inset-y-0 w-10 right-0"
+            onClick={() => setSuccess(false)}
+          >
+            <X className="size-4 " />
+          </button>
+        </div>
+      )}
     </div>
   );
 };
