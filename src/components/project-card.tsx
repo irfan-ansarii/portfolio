@@ -42,7 +42,7 @@ export function ProjectCard({
   return (
     <div
       className={
-        "flex flex-col overflow-hidden transition-all duration-300 ease-out h-full border-r  border-t"
+        "flex flex-col overflow-hidden transition-all duration-300 ease-out h-full"
       }
     >
       <Link
@@ -104,7 +104,7 @@ export function ProjectCard({
               href={link?.href}
               key={idx}
               target="_blank"
-              className={`inline-flex gap-1 items-center bg-muted/50 justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 flex-1 text-xs rounded-none shadow-none hover:bg-muted/20 ${
+              className={`inline-flex gap-1 items-center bg-secondary justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 flex-1 text-xs rounded-none shadow-none hover:bg-secondary/80 ${
                 idx === 1 ? "border-l" : ""
               }`}
             >

@@ -19,12 +19,11 @@ const SkillsSection = () => {
               key={skill.name}
               delay={BLUR_FADE_DELAY * 10 + id * 0.05}
               yOffset={0}
+              className="border-r border-b"
             >
-              <div className="border-r border-b">
-                <div className="flex gap-2 items-center justify-center opacity-40 hover:opacity-100 px-4 py-6 transition-opacity">
-                  <skill.icon className="size-4" />
-                  <span className="text-xs truncate">{skill.name}</span>
-                </div>
+              <div className="flex gap-2 items-center justify-center opacity-40 hover:opacity-100 px-4 py-6 transition-opacity">
+                <skill.icon className="size-4" />
+                <span className="text-xs truncate">{skill.name}</span>
               </div>
             </BlurFade>
           ))}

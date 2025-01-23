@@ -28,7 +28,11 @@ const EducationSection = () => {
                 title={education.school}
                 subtitle={education.degree}
                 description={education.description}
-                period={`${education?.start} - ${education?.end}`}
+                period={
+                  education.start
+                    ? `${education.start} - ${education.end}`
+                    : undefined
+                }
                 expanded={true}
               />
             </BlurFade>

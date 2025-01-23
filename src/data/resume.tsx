@@ -125,6 +125,8 @@ export const DATA = {
       degree: "Pro Backend Developer Course - Express.js",
       description: "Completed 40+ hours of hands-on API development training.",
       logoUrl: "/waterloo.png",
+      start: undefined,
+      end: undefined,
     },
     {
       school: "Udemy",
@@ -132,6 +134,8 @@ export const DATA = {
       degree: "React Ecommerce Site Development",
       description: "Mastered advanced React and Shopify integration.",
       logoUrl: "/laurier.png",
+      start: undefined,
+      end: undefined,
     },
     {
       school: "Oxford Software Institute",
@@ -139,6 +143,8 @@ export const DATA = {
       degree: "C, C++, Java",
       description: "Gained a strong foundation in object-oriented programming.",
       logoUrl: "/ib.png",
+      start: undefined,
+      end: undefined,
     },
   ],
   projects: [
@@ -267,23 +273,23 @@ export const DATA = {
   ],
   contact: [
     {
-      name: "Email",
-      url: "#",
+      name: "Instagram",
+      url: "https://instagram.com/",
       icon: SiInstagram,
     },
     {
       name: "X",
-      url: "https://dub.sh/dillion-twitter",
+      url: "https://x.com/",
       icon: SiX,
     },
     {
       name: "LinkedIn",
-      url: "https://dub.sh/dillion-linkedin",
+      url: "https://www.linkedin.com/in/irfan-ansari-b01597304/",
       icon: Linkedin,
     },
     {
       name: "GitHub",
-      url: "https://dub.sh/dillion-github",
+      url: "https://github.com/irfan-ansarii/portfolio",
       icon: SiGithub,
     },
   ],

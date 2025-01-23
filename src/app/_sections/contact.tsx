@@ -10,8 +10,12 @@ const BLUR_FADE_DELAY = 0.05;
 const ContactSection = () => {
   return (
     <section id="contact" className="container">
-      <div className="border-x border-t overflow-hidden relative p-2 py-6 md:p-8">
-        <BlurFade delay={BLUR_FADE_DELAY * 13} yOffset={0}>
+      <div className="border-x border-t overflow-hidden relative">
+        <BlurFade
+          delay={BLUR_FADE_DELAY * 13}
+          yOffset={0}
+          className="p-2 py-6 md:p-8"
+        >
           <h2 className="text-sm text-muted-foreground text-center mb-6 text-balance font-semibold tracking-tigh uppercase">
             contact
           </h2>
@@ -50,13 +54,14 @@ const ContactSection = () => {
           >
             <a
               key={con.name}
-              href="javascript:void(0)"
+              href={con.url}
+              target="_blank"
               className="px-8 py-12 relative group flex justify-center"
             >
-              <div className="opacity-10 transition-opacity">
-                <con.icon className="size-16" />
+              <div className="opacity-20 transition-opacity">
+                <con.icon className="size-10" />
               </div>
-              <div className="absolute inset-0 bottom-0 group-hover:opacity-100 backdrop-blur-2xl opacity-0 bg-muted/50 transition-opacity flex items-center justify-center">
+              <div className="absolute inset-0 bottom-0 group-hover:opacity-100 backdrop-blur-2xl opacity-0 bg-secondary/80 transition-opacity flex items-center justify-center">
                 <ExternalLink className="size-5" />
               </div>
             </a>

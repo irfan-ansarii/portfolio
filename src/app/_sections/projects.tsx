@@ -7,9 +7,9 @@ const BLUR_FADE_DELAY = 0.05;
 const ProjectsSection = () => {
   return (
     <section id="projects" className="container">
-      <div className="relative mx-auto border-x border-t overflow-hidden p-4 sm:p-8">
+      <div className="relative mx-auto border-x border-t overflow-hidden">
         <BlurFade delay={BLUR_FADE_DELAY * 11} yOffset={0}>
-          <h2 className="text-center text-muted-foreground text-sm text-balance font-semibold tracking-tigh uppercase mb-6">
+          <h2 className="text-center text-muted-foreground text-sm text-balance font-semibold tracking-tigh uppercase mb-6 p-4 sm:p-8">
             projects
           </h2>
 
@@ -32,12 +32,13 @@ const ProjectsSection = () => {
         </BlurFade>
       </div>
       <div className="space-y-12 border-x overflow-hidden">
-        <div className="grid grid-cols-1 sm:grid-cols-2 border-r [&>*:nth-child(1n)]:border-r-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 [&>*:nth-child(2n)]:border-r-0">
           {DATA.projects.map((project, id) => (
             <BlurFade
               key={project.title}
               delay={BLUR_FADE_DELAY * 12 + id * 0.05}
               yOffset={0}
+              className="border-r border-t"
             >
               <ProjectCard
                 href={project.href}
