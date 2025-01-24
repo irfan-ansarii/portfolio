@@ -104,7 +104,7 @@ export function ProjectCard({
               href={link?.href}
               key={idx}
               target="_blank"
-              className={`inline-flex gap-1 items-center bg-secondary justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 flex-1 text-xs rounded-none shadow-none hover:bg-secondary/80 ${
+              className={`inline-flex gap-1 items-center bg-secondary justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 flex-1 text-xs rounded-none shadow-none hover:bg-secondary/80 ${
                 idx === 1 ? "border-l" : ""
               }`}
             >

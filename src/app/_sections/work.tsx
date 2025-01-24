@@ -17,7 +17,6 @@ const WorkSection = () => {
           {DATA.work.map((work, id) => (
             <BlurFade
               delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-              yOffset={0}
               key={work.company}
             >
               <ResumeCard

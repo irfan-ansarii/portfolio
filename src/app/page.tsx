@@ -9,7 +9,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 
 export default function Page() {
   return (
-    <BlurFade yOffset={0} delay={0.2}>
+    <BlurFade delay={0.2}>
       <IntroSection />
       <AboutSection />
       <WorkSection />

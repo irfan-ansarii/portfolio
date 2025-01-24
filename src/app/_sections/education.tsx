@@ -9,7 +9,7 @@ const EducationSection = () => {
     <section id="education" className="container">
       <div className="p-4 sm:p-8 border-x border-t">
         <div className="mb-6">
-          <BlurFade yOffset={0} delay={BLUR_FADE_DELAY * 7}>
+          <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>
         </div>
@@ -18,7 +18,6 @@ const EducationSection = () => {
             <BlurFade
               key={education.school}
               delay={BLUR_FADE_DELAY * 8 + id * 0.05}
-              yOffset={0}
             >
               <ResumeCard
                 key={education.school}

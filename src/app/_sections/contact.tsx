@@ -11,11 +11,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="container">
       <div className="border-x border-t overflow-hidden relative">
-        <BlurFade
-          delay={BLUR_FADE_DELAY * 13}
-          yOffset={0}
-          className="p-2 py-6 md:p-8"
-        >
+        <BlurFade delay={BLUR_FADE_DELAY * 13} className="p-2 py-6 md:p-8">
           <h2 className="text-sm text-muted-foreground text-center mb-6 text-balance font-semibold tracking-tigh uppercase">
             contact
           </h2>
@@ -47,11 +43,7 @@ const ContactSection = () => {
       </div>
       <div className="grid grid-cols-4 border-x border-t divide-x">
         {DATA.contact.map((con, id) => (
-          <BlurFade
-            key={con.name}
-            delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-            yOffset={0}
-          >
+          <BlurFade key={con.name} delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
             <a
               key={con.name}
               href={con.url}
@@ -68,7 +60,7 @@ const ContactSection = () => {
           </BlurFade>
         ))}
       </div>
-      <BlurFade delay={BLUR_FADE_DELAY * 14} yOffset={0}>
+      <BlurFade delay={BLUR_FADE_DELAY * 14}>
         <ContactForm />
       </BlurFade>
     </section>

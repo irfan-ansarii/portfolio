@@ -8,8 +8,8 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="container">
       <div className="relative mx-auto border-x border-t overflow-hidden">
-        <BlurFade delay={BLUR_FADE_DELAY * 11} yOffset={0}>
-          <h2 className="text-center text-muted-foreground text-sm text-balance font-semibold tracking-tigh uppercase mb-6 p-4 sm:p-8">
+        <BlurFade delay={BLUR_FADE_DELAY * 11} className="p-4 sm:p-8">
+          <h2 className="text-center text-muted-foreground text-sm text-balance font-semibold tracking-tigh uppercase mb-6">
             projects
           </h2>
 
@@ -37,7 +37,6 @@ const ProjectsSection = () => {
             <BlurFade
               key={project.title}
               delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-              yOffset={0}
               className="border-r border-t"
             >
               <ProjectCard
