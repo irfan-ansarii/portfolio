@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -57,7 +58,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className="scroll-smooth scroll-p-[63px]	"
+      className="scroll-smooth scroll-p-[63px]"
     >
       <body
         className={cn(
@@ -70,7 +71,7 @@ export default function RootLayout({
             <Navbar />
 
             <main className="flex flex-col">{children}</main>
-
+            <Footer />
             <div className="fixed bottom-0 inset-x-0 pointer-events-none h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background"></div>
           </TooltipProvider>
         </ThemeProvider>

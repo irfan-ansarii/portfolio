@@ -64,8 +64,8 @@ export function ProjectCard({
             src={image}
             alt={title}
             width={500}
-            height={300}
-            className="h-40 w-full overflow-hidden object-cover object-top"
+            height={500}
+            className="h-40 w-full overflow-hidden object-cover object-top aspect-square"
           />
         )}
       </Link>
@@ -76,7 +76,7 @@ export function ProjectCard({
           <div className="hidden font-sans text-xs underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
-          <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert max-w-[300px]">
+          <Markdown className="prose text-pretty font-sans text-xs text-muted-foreground dark:prose-invert max-w-[300px]">
             {description}
           </Markdown>
         </div>
@@ -104,7 +104,7 @@ export function ProjectCard({
               href={link?.href}
               key={idx}
               target="_blank"
-              className={`inline-flex gap-1 items-center bg-secondary justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 flex-1 text-xs rounded-none shadow-none hover:bg-secondary/80 ${
+              className={`inline-flex gap-1 items-center bg-secondary/80 justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 flex-1 text-xs rounded-none shadow-none hover:bg-secondary ${
                 idx === 1 ? "border-l" : ""
               }`}
             >

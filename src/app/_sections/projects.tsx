@@ -3,6 +3,8 @@ import { DATA } from "@/data/resume";
 import { ProjectCard } from "@/components/project-card";
 import FlickeringGrid from "@/components/magicui/flickering-grid";
 import BlurFade from "@/components/magicui/blur-fade";
+import Link from "next/link";
+import { MoveRight } from "lucide-react";
 const BLUR_FADE_DELAY = 0.05;
 const ProjectsSection = () => {
   return (
@@ -18,6 +20,7 @@ const ProjectsSection = () => {
             className="w-full h-full -z-20 absolute inset-0 size-full"
             color="rgb(38,38,38)"
           />
+          <span className="absolute inset-0 backdrop-blur-3xl bg-background/60 -z-10"></span>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-xl font-bold tracking-tighter sm:text-3xl">
@@ -33,7 +36,7 @@ const ProjectsSection = () => {
       </div>
       <div className="space-y-12 border-x overflow-hidden">
         <div className="grid grid-cols-1 sm:grid-cols-2 [&>*:nth-child(2n)]:border-r-0">
-          {DATA.projects.map((project, id) => (
+          {DATA.projects.slice(2).map((project, id) => (
             <BlurFade
               key={project.title}
               delay={BLUR_FADE_DELAY * 12 + id * 0.05}
@@ -53,6 +56,15 @@ const ProjectsSection = () => {
             </BlurFade>
           ))}
         </div>
+      </div>
+      <div className="space-y-12 border-x overflow-hidden border-t">
+        <Link
+          href="/projects"
+          className="flex justify-center items-center py-3 h-11 group text-xs"
+        >
+          View all
+          <MoveRight className="size-4 transform opacity-0  transition-all group-hover:opacity-100 group-hover:translate-x-2" />
+        </Link>
       </div>
     </section>
   );

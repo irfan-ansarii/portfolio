@@ -46,8 +46,8 @@ export const DATA = {
   ],
   name: "Irfan Ansari",
   initials: "IA",
-  url: "https://dillion.io",
-  location: "San Francisco, CA",
+  url: "https://irfanansari.vercel.app",
+  location: "New Delhi - India",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
     "Building powerful applications with precision and passion, from front-end finesse to back-end brilliance.",
@@ -75,7 +75,7 @@ export const DATA = {
       href: "https://goldysnestt.com",
       title: "Full-Stack Developer",
       logoUrl: "/goldys.png",
-      start: "May 2023",
+      start: "2022",
       end: "Present",
       description: `- Developed a custom inventory and POS management system using Next.js, Hono.js, ShadCN, PostgreSQL, and Drizzle ORM, resulting in an 80% improvement in processing speed.
       \n- Managed and optimized a high-performance Shopify site, enhancing conversion rates by 25% through implementing new features.
@@ -83,28 +83,16 @@ export const DATA = {
 `,
     },
     {
-      company: "DigiAcai",
+      company: "Matrixwebstudio",
       badges: [],
-      href: "https://digiacai.com",
-      title: "Wordpress & Shopify Developer",
+      href: "https://matrixwebstudio.com",
+      title: "Full-Stack Developer",
       logoUrl: "/digiacai.png",
-      start: "June 2022",
-      end: "April 2023",
+      start: "2018",
+      end: "2022",
       description: `- Managed and optimized 15+ client websites on WordPress and Shopify, boosting website load speed by 40%.
       \n- Designed and implemented new features to align with client goals, achieving a 90% satisfaction rate.
       \n- Enhanced user experience through responsive designs, resulting in a 20% increase in website traffic.
-`,
-    },
-    {
-      company: "Priyanka Gill",
-      href: "https://priyankagill.com",
-      title: "Wordpress Developer",
-      logoUrl: "/pg.png",
-      start: "August 2020",
-      end: "May 2022",
-      description: `- Built WordPress sites from the ground up, including custom theme development, delivering high-performance websites.
-      \n- Designed and developed React-based websites tailored to specific requirements.
-      \n- Optimized SEO, driving a significant increase in organic traffic.
 `,
     },
   ],

@@ -22,7 +22,7 @@ const Navbar = () => {
                 href="/"
                 className="h-16 px-6 inline-flex gap-1 items-center opacity-60 hover:opacity-100 transition-opacity"
               >
-                <Home className="w-5 h-5" />
+                <Home className="size-5" />
               </Link>
             </BlurFade>
             <div className="group">
@@ -31,7 +31,7 @@ const Navbar = () => {
                   href="#"
                   className="h-16 px-6 inline-flex gap-1 items-center text-sm opacity-60 hover:opacity-100 transition-opacity"
                 >
-                  <Grip className="w-5 h-5" />
+                  <Grip className="size-6" />
                 </Link>
               </BlurFade>
               <div className="absolute w-52 right-[1px] transition duration-500 invisible group-hover:visible">

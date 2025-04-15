@@ -20,23 +20,17 @@ const ContactSection = () => {
             className="w-full h-full -z-20 absolute inset-0 size-full"
             color="#262626"
           />
+          <span className="absolute inset-0 backdrop-blur-3xl bg-background/60 -z-10"></span>
 
           <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full ">
             <div className="space-y-3">
               <h2 className="text-xl font-bold tracking-tighter sm:text-3xl">
-                Stay Connected
+                Get in touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground prose">
-                Want to chat? Just shoot me a dm &nbsp;
-                <Link
-                  // href={DATA.contact[0].url}
-                  href="#"
-                  className="text-indigo-500 hover:underline"
-                >
-                  with a direct question on twitter &nbsp;
-                </Link>
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                Have a question, project idea, or just want to say hello? I'm
+                always open to discussing new projects, creative ideas, or
+                opportunities to be part of your vision.
               </p>
             </div>
           </div>
