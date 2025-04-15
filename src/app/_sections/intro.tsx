@@ -8,7 +8,7 @@ const BLUR_FADE_DELAY = 0.05;
 const IntroSection = () => {
   return (
     <section id="hero" className="container">
-      <div className="mx-auto w-full space-y-8 border-x p-4 sm:p-8">
+      <div className="mx-auto w-full space-y-8 border-x p-4 pt-6 sm:p-8 sm:pt-10">
         <div className="gap-2 flex justify-between items-center">
           <div className="flex-col flex flex-1 gap-6">
             <BlurFadeText

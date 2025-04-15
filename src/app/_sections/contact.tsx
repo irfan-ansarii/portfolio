@@ -23,16 +23,17 @@ const ContactSection = () => {
 
           <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full ">
             <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <h2 className="text-xl font-bold tracking-tighter sm:text-3xl">
                 Stay Connected
               </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
+              <p className="mx-auto max-w-[600px] text-muted-foreground prose">
+                Want to chat? Just shoot me a dm &nbsp;
                 <Link
-                  href={DATA.contact[0].url}
-                  className="text-blue-500 hover:underline"
+                  // href={DATA.contact[0].url}
+                  href="#"
+                  className="text-indigo-500 hover:underline"
                 >
-                  with a direct question on twitter
+                  with a direct question on twitter &nbsp;
                 </Link>
                 and I&apos;ll respond whenever I can. I will ignore all
                 soliciting.

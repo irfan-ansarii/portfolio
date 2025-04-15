@@ -83,8 +83,10 @@ export const ResumeCard = ({
                 )}
                 <ChevronRightIcon
                   className={cn(
-                    "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
-                    isExpanded ? "rotate-90" : "rotate-0"
+                    "size-4 transform transition-all duration-300 ease-out group-hover:translate-x-1 opacity-0 group-hover:opacity-100",
+                    isExpanded
+                      ? "rotate-90 translate-x-1 opacity-100"
+                      : "rotate-0"
                   )}
                 />
               </h3>

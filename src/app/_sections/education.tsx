@@ -5,6 +5,17 @@ import BlurFade from "@/components/magicui/blur-fade";
 
 const BLUR_FADE_DELAY = 0.05;
 const EducationSection = () => {
+  const getEducationYear = (
+    start: string | undefined,
+    end: string | undefined
+  ) => {
+    if (!start) return undefined;
+    if (start && end) {
+      return `${start} - ${end}`;
+    }
+    if (start && !end) return start;
+  };
+
   return (
     <section id="education" className="container">
       <div className="p-4 sm:p-8 border-x border-t">
@@ -27,12 +38,8 @@ const EducationSection = () => {
                 title={education.school}
                 subtitle={education.degree}
                 description={education.description}
-                period={
-                  education.start
-                    ? `${education.start} - ${education.end}`
-                    : undefined
-                }
-                expanded={true}
+                period={getEducationYear(education.start, education.end)}
+                expanded={id == 0 ? true : false}
               />
             </BlurFade>
           ))}

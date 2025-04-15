@@ -53,7 +53,7 @@ export const DATA = {
     "Building powerful applications with precision and passion, from front-end finesse to back-end brilliance.",
   summary:
     "Full Stack Developer with expertise in building scalable web applications, intuitive interfaces, and efficient back-end solutions. Strong problem-solving abilities, keen attention to detail, and a track record of delivering projects on time. Skilled at collaborating with cross-functional teams to achieve project goals.",
-  avatarUrl: "/me.png",
+  avatarUrl: "/me.jpg",
   skills: [
     { icon: SiReact, name: "React" },
     { icon: SiNextdotjs, name: "Next.js" },
@@ -116,34 +116,48 @@ export const DATA = {
       description:
         "Computer/Information Technology Administration and Management",
       logoUrl: "/smu.png",
-      start: "2023",
-      end: "2024",
+      start: "2018",
+      end: "2022",
     },
     {
       school: "Learn Code Online",
       href: "https://learncodeonline.in/",
-      degree: "Pro Backend Developer Course - Express.js",
-      description: "Completed 40+ hours of hands-on API development training.",
+      degree:
+        "Hands-on API Development Training – React.js, Express.js, and MongoDB",
+      description:
+        "Gained hands-on experience building RESTful APIs with Express.js, MongoDB, and React.js, focusing on user authentication, CRUD operations, and state management.",
       logoUrl: "/lco.png",
-      start: undefined,
+      start: "2022",
       end: undefined,
     },
     {
       school: "Udemy",
       href: "https://www.udemy.com/",
-      degree: "React Ecommerce Site Development",
-      description: "Mastered advanced React and Shopify integration.",
+      degree: "Building Database-Driven Web Applications with PHP & MySQL",
+      description:
+        "Mastered developing dynamic web applications using PHP and MySQL, with a focus on backend logic and database operations.",
       logoUrl: "/udemy.png",
-      start: undefined,
+      start: "2021",
+      end: undefined,
+    },
+    {
+      school: "Udemy",
+      href: "https://www.udemy.com/",
+      degree: "Advanced React E-Commerce Development",
+      description:
+        "Mastered building high-performance e-commerce sites with React, including seamless integration with Shopify for enhanced functionality.",
+      logoUrl: "/udemy.png",
+      start: "2021",
       end: undefined,
     },
     {
       school: "Oxford Software Institute",
       href: "https://www.oxfordinstitute.in/",
-      degree: "C, C++, Java",
-      description: "Gained a strong foundation in object-oriented programming.",
+      degree: "C, C++, and Java Programming",
+      description:
+        "Developed a solid foundation in object-oriented programming (OOP) and algorithms using C, C++, and Java.",
       logoUrl: "/oxford.png",
-      start: undefined,
+      start: "2017",
       end: undefined,
     },
   ],
@@ -284,7 +298,7 @@ export const DATA = {
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/irfan-ansari-b01597304/",
+      url: "https://www.linkedin.com/in",
       icon: Linkedin,
     },
     {
