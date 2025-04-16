@@ -28,9 +28,9 @@ const ContactSection = () => {
                 Get in touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground prose">
-                Have a question, project idea, or just want to say hello? I'm
-                always open to discussing new projects, creative ideas, or
-                opportunities to be part of your vision.
+                Have a question, project idea, or just want to say hello?
+                I&apos;m always open to discussing new projects, creative ideas,
+                or opportunities to be part of your vision.
               </p>
             </div>
           </div>
