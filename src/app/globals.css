@@ -64,6 +64,9 @@
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
   }
+  .theme {
+    --animate-aurora: aurora 8s ease-in-out infinite alternate;
+  }
 }
 
 @layer base {
@@ -141,4 +144,29 @@ code[data-line-numbers-max-digits="2"] > [data-line]::before {
 
 code[data-line-numbers-max-digits="3"] > [data-line]::before {
   width: 3rem;
+}
+
+@theme inline {
+  @keyframes aurora {
+  0% {
+    backgroundPosition: 0% 50%;
+    transform: rotate(-5deg) scale(0.9);
+    }
+  25% {
+    backgroundPosition: 50% 100%;
+    transform: rotate(5deg) scale(1.1);
+    }
+  50% {
+    backgroundPosition: 100% 50%;
+    transform: rotate(-3deg) scale(0.95);
+    }
+  75% {
+    backgroundPosition: 50% 0%;
+    transform: rotate(3deg) scale(1.05);
+    }
+  100% {
+    backgroundPosition: 0% 50%;
+    transform: rotate(-5deg) scale(0.9);
+    }
+  }
 }

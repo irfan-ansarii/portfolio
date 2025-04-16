@@ -14,7 +14,6 @@ interface Props {
   title: string;
   href?: string;
   description: string;
-  dates: string;
   tags: readonly string[];
   link?: string;
   image?: string;
@@ -31,11 +30,9 @@ export function ProjectCard({
   title,
   href,
   description,
-  dates,
   tags,
   link,
   image,
-  video,
   links,
   className,
 }: Props) {
@@ -47,32 +44,24 @@ export function ProjectCard({
     >
       <Link
         href={href || "#"}
-        className={cn("block cursor-pointer p-4 sm:p-8", className)}
+        target="_blank"
+        rel="nofollow"
+        className={cn("block cursor-pointer p-4 sm:p-8 sm:pb-4", className)}
       >
-        {video && (
-          <video
-            src={video}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
-          />
-        )}
         {image && (
           <Image
             src={image}
             alt={title}
-            width={500}
-            height={500}
-            className="h-40 w-full overflow-hidden object-cover object-top aspect-square"
+            width={200}
+            height={140}
+            className="h-40 w-full overflow-hidden object-cover object-top"
           />
         )}
       </Link>
       <CardHeader className="px-4 sm:px-8">
         <div className="space-y-1">
           <CardTitle className="mt-1 text-base">{title}</CardTitle>
-          <time className="font-sans text-xs">{dates}</time>
+          {/* <time className="font-sans text-xs">{dates}</time> */}
           <div className="hidden font-sans text-xs underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
@@ -104,6 +93,7 @@ export function ProjectCard({
               href={link?.href}
               key={idx}
               target="_blank"
+              rel="nofollow"
               className={`inline-flex gap-1 items-center bg-secondary/80 justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 flex-1 text-xs rounded-none shadow-none hover:bg-secondary ${
                 idx === 1 ? "border-l" : ""
               }`}

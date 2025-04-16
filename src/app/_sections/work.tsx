@@ -5,6 +5,13 @@ import BlurFade from "@/components/magicui/blur-fade";
 
 const BLUR_FADE_DELAY = 0.05;
 const WorkSection = () => {
+  const getPeriod = (start: string | undefined, end: string | undefined) => {
+    if (!start) return undefined;
+    if (start && end) {
+      return `${start} - ${end}`;
+    }
+    if (start && !end) return start;
+  };
   return (
     <section id="work" className="container">
       <div className="p-4 sm:p-8 border-x border-t">
@@ -25,8 +32,7 @@ const WorkSection = () => {
                 altText={work.company}
                 title={work.company}
                 subtitle={work.title}
-                href={work.href}
-                period={`${work.start} - ${work.end ?? "Present"}`}
+                period={getPeriod(work.start, work.end)}
                 description={work.description}
                 expanded={id === 0 && true}
               />

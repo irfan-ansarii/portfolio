@@ -9,7 +9,7 @@ const ProjectsPage = () => {
   return (
     <BlurFade delay={0.2}>
       <section id="work" className="container">
-        <div className="relative mx-auto border-x border-t overflow-hidden">
+        <div className="relative mx-auto border-x overflow-hidden">
           <BlurFade delay={BLUR_FADE_DELAY * 11} className="p-4 sm:p-8">
             <h2 className="text-center text-muted-foreground text-sm text-balance font-semibold tracking-tigh uppercase mb-6">
               projects
@@ -36,28 +36,8 @@ const ProjectsPage = () => {
           </BlurFade>
         </div>
 
-        <div className="border-x px-4 sm:px-8 overflow-hidden border-t">
-          <ul className="flex justify-between gap-4 h-11 -mx-1">
-            <li className="inline-flex items-center self-stretch opacity-50 relative group cursor-pointer hover:opacity-100 transition-opacity px-1">
-              <span className="absolute inset-x-0 h-[2px] bg-foreground bottom-0 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0"></span>
-              All
-            </li>
-            <li className="inline-flex items-center self-stretch opacity-50 relative group cursor-pointer hover:opacity-100 transition-opacity px-1">
-              <span className="absolute inset-x-0 h-[2px] bg-foreground bottom-0 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0"></span>
-              Shopify
-            </li>
-            <li className="inline-flex items-center self-stretch opacity-50 relative group cursor-pointer hover:opacity-100 transition-opacity px-1">
-              <span className="absolute inset-x-0 h-[2px] bg-foreground bottom-0 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0"></span>
-              Wordpress
-            </li>
-            <li className="inline-flex items-center self-stretch opacity-50 relative group cursor-pointer hover:opacity-100 transition-opacity px-1">
-              <span className="absolute inset-x-0 h-[2px] bg-foreground bottom-0 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0"></span>
-              Custom
-            </li>
-          </ul>
-        </div>
         <div className="border-x overflow-hidden">
-          <div className="grid grid-cols-1 sm:grid-cols-2 [&>*:nth-child(2n)]:border-r-0 border-t">
+          <div className="grid grid-cols-1 sm:grid-cols-2 [&>*:nth-child(2n)]:border-r-0">
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
@@ -69,10 +49,8 @@ const ProjectsPage = () => {
                   key={project.title}
                   title={project.title}
                   description={project.description}
-                  dates={project.dates}
                   tags={project.technologies}
                   image={project.image}
-                  video={project.video}
                   links={project.links}
                 />
               </BlurFade>

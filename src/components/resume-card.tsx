@@ -100,11 +100,11 @@ export const ResumeCard = ({
           </CardHeader>
           {description && (
             <motion.div
-              initial={{ opacity: 0, height: 0 }}
+              initial={{ opacity: 0, height: 0, visibility: "hidden" }}
               animate={{
                 opacity: isExpanded ? 1 : 0,
-
                 height: isExpanded ? "auto" : 0,
+                visibility: isExpanded ? "visible" : "hidden",
               }}
               transition={{
                 duration: 0.7,

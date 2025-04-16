@@ -15,6 +15,7 @@ import {
   SiTypescript,
   SiWordpress,
   SiX,
+  SiDrizzle,
 } from "@icons-pack/react-simple-icons";
 
 export const DATA = {
@@ -55,45 +56,68 @@ export const DATA = {
     "Full Stack Developer with expertise in building scalable web applications, intuitive interfaces, and efficient back-end solutions. Strong problem-solving abilities, keen attention to detail, and a track record of delivering projects on time. Skilled at collaborating with cross-functional teams to achieve project goals.",
   avatarUrl: "/me.jpg",
   skills: [
-    { icon: SiReact, name: "React" },
-    { icon: SiNextdotjs, name: "Next.js" },
-    { icon: SiTypescript, name: "TypeScript" },
-    { icon: SiNodedotjs, name: "Node.js" },
-    { icon: SiExpress, name: "Express" },
-    { icon: SiPrisma, name: "Prisma" },
-    { icon: SiPostgresql, name: "PostgreSQL" },
-    { icon: SiDocker, name: "Docker" },
-    { icon: SiTailwindcss, name: "Tailwind" },
-    { icon: SiPhp, name: "PHP" },
-    { icon: SiWordpress, name: "WordPress" },
-    { icon: SiShopify, name: "Shopify" },
+    { icon: SiReact, name: "React", href: "https://react.dev" },
+    { icon: SiNextdotjs, name: "Next.js", href: "https://nextjs.org" },
+    {
+      icon: SiTypescript,
+      name: "TypeScript",
+      href: "https:// www.typescriptlang.org",
+    },
+    { icon: SiNodedotjs, name: "Node.js", href: "https://nodejs.org" },
+    { icon: SiExpress, name: "Express", href: "https://expressjs.com" },
+    { icon: SiPrisma, name: "Prisma", href: "https://www.prisma.io" },
+    {
+      icon: SiPostgresql,
+      name: "PostgreSQL",
+      href: "https://www.postgresql.org",
+    },
+    { icon: SiDocker, name: "Docker", href: "https://www.docker.com" },
+    { icon: SiTailwindcss, name: "Tailwind", href: "https://tailwindcss.com" },
+    { icon: SiPhp, name: "PHP", href: "https://www.php.net" },
+    { icon: SiWordpress, name: "WordPress", href: "https://wordpress.org" },
+    { icon: SiShopify, name: "Shopify", href: "https://rwww.shopify.com" },
   ],
 
   work: [
     {
       company: "Goldys Nestt",
-      href: "https://goldysnestt.com",
       title: "Full-Stack Developer",
       logoUrl: "/goldys.png",
-      start: "2022",
+      start: "2021",
       end: "Present",
-      description: `- Developed a custom inventory and POS management system using Next.js, Hono.js, ShadCN, PostgreSQL, and Drizzle ORM, resulting in an 80% improvement in processing speed.
-      \n- Managed and optimized a high-performance Shopify site, enhancing conversion rates by 25% through implementing new features.
-      \n- Collaborated with marketing and design teams to enhance functionality, driving a 15% increase in user engagement..
-`,
+      description: `- Design, develop, and optimize high-performance full-stack web applications, ensuring scalability and smooth user experiences.
+        \n- Collaborate with cross-functional teams to craft innovative features, from concept to deployment, aligning with business objectives.
+        \n- Deliver custom solutions that address unique business challenges and project goals, driving value and efficiency.
+        \n- Oversee website infrastructure, proactively monitoring uptime and swiftly resolving technical issues to maintain seamless operation.
+        \n- Contribute to team growth through active participation in code reviews, architectural discussions, and knowledge sharing, fostering a collaborative culture.
+        \n- Lead the charge on innovation, staying ahead of industry trends and integrating cutting-edge technologies to continuously improve development practices.
+      `,
     },
     {
-      company: "Matrixwebstudio",
-      badges: [],
-      href: "https://matrixwebstudio.com",
-      title: "Full-Stack Developer",
+      company: "Digiacai",
+      title: "Freelance Developer",
       logoUrl: "/digiacai.png",
+      start: "2022",
+      end: undefined,
+      description: `- Built and customized Shopify and WordPress websites as part of a remote development team.
+        \n- Implemented responsive designs, custom features, and third-party integrations.
+        \n- Collaborated with cross-functional teams to understand client requirements and deliver high-quality, optimized results.
+        \n- Handled performance tuning, bug fixes, and ongoing site maintenance.
+      `,
+    },
+    {
+      company: "Matrix",
+      title: "Full-Stack Developer",
+      logoUrl: "/matrix.png",
       start: "2018",
-      end: "2022",
-      description: `- Managed and optimized 15+ client websites on WordPress and Shopify, boosting website load speed by 40%.
-      \n- Designed and implemented new features to align with client goals, achieving a 90% satisfaction rate.
-      \n- Enhanced user experience through responsive designs, resulting in a 20% increase in website traffic.
-`,
+      end: "2021",
+      description: `- Developed custom Shopify and WordPress websites tailored to client branding and functional requirements.
+        \n- Built and customized themes, plugins, and third-party integrations to enhance eCommerce and CMS functionality.
+        \n- Collaborated with designers and project managers to deliver responsive, SEO-friendly, and conversion-optimized websites.
+        \n- Handled website migrations, performance optimization, and cross-browser testing.
+        \n- Provided ongoing technical support and maintenance to ensure smooth website operation.
+        \n- Worked directly with clients to understand business needs, suggest improvements, and deliver high-quality solutions on time.
+      `,
     },
   ],
   education: [
@@ -151,126 +175,278 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Shopminis",
+      href: "https://shopminis.in",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "Developed a stylish, responsive eCommerce platform for Shop Minis, a homegrown Indian brand specializing in vacation apparel. The site offers seamless navigation and showcases their latest collections, enhancing the online shopping experience.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Web Component",
+        "Embla",
+        "Razorpay",
+        "Metafields & Metaobjects",
+        "Liquid",
+        "Shopify",
       ],
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://shopminis.in",
           icon: <Globe className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+      image: "/minis.png",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "Business & Workflow Management App",
+      href: "https://goldys.vercel.app",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "A fully custom web app built with Next.js, Drizzle ORM, and PostgreSQL — designed to streamline operations, manage workflows, and improve team productivity with a clean UI and robust backend architecture.",
       technologies: [
         "Next.js",
         "Typescript",
         "PostgreSQL",
-        "Prisma",
+        "Drizzle",
         "TailwindCSS",
-        "Stripe",
         "Shadcn UI",
-        "Magic UI",
+        "React Query",
+        "Hono.js",
+        "Razorpay",
+        "Resend",
+        "Confetti",
+        "Webhook",
+        "Shopify",
+        "Shiprocket",
       ],
       links: [
         {
           type: "Website",
-          href: "https://magicui.design",
+          href: "https://goldys.vercel.app",
           icon: <Globe className="size-3" />,
         },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Github className="size-3" />,
-        },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "/gn-app.png",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "Sauga Smiles Dental",
+      href: "https://saugasmilesdental.com",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "Developed a modern, responsive wordpress website for Sauga Smiles Dental, showcasing their comprehensive dental services and facilitating easy appointment bookings to enhance patient engagement.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "HTML",
+        "CSS",
+        "Javascript",
+        "jQuery",
+        "Elementor",
+        "Bootstrap",
+        "Font Awesome",
+        "SMTP",
+        "Php",
+        "Wordpress",
       ],
       links: [
         {
           type: "Website",
-          href: "https://llm.report",
+          href: "https://saugasmilesdental.com",
           icon: <Globe className="size-3" />,
         },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Github className="size-3" />,
-        },
       ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      image: "/ssd.png",
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
+      title: "The Design Atelier",
+      href: "https://thedesignatelier.com",
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+        "Crafted a refined, responsive Wordpress website for The Design Atelier, an award-winning interior design firm, to showcase their timeless residential and boutique commercial projects, emphasizing elegance and user-friendly navigation.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "HTML",
+        "CSS",
+        "Javascript",
+        "jQuery",
+        "Php",
+        "GSAP",
+        "Bootstrap",
+        "Font Awesome",
+        "SMTP",
+        "Wordpress",
       ],
       links: [
         {
           type: "Website",
-          href: "https://automatic.chat",
+          href: "https://thedesignatelier.com",
           icon: <Globe className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      image: "/tda.png",
+    },
+    {
+      title: "Prerna Ghosh Label",
+      href: "https://prernaghoshlabel.in",
+      active: true,
+      description:
+        "Developed a stylish, responsive Shopify eCommerce website for Prerna Ghosh Label, a contemporary fashion brand, facilitating seamless browsing and shopping experiences for their handcrafted, made-to-order collections.",
+      technologies: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Web Component",
+        "Flickity",
+        "Razorpay",
+        "Metafields & Metaobjects",
+        "Photoswipe",
+        "Liquid",
+        "Shopify",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://prernaghoshlabel.in",
+          icon: <Globe className="size-3" />,
+        },
+      ],
+      image: "/pgl.png",
+    },
+    {
+      title: "Central Burlington Dental Care",
+      href: "https://cbdentistry.ca",
+      active: true,
+      description:
+        "Developed a responsive, SEO-optimized website for Central Burlington Dental Care, featuring intuitive navigation, streamlined appointment booking, and an integrated Google Reviews widget to showcase patient feedback and build trust.",
+      technologies: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "jQuery",
+        "Bootstrap",
+        "WPBakery",
+        "Font Awesome",
+        "SMTP",
+        "Php",
+        "Wordpress",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://cbdentistry.ca",
+          icon: <Globe className="size-3" />,
+        },
+      ],
+      image: "/cb.png",
+    },
+    {
+      title: "The Clothing Factory",
+      href: "https://theclothingfactory.in",
+      active: true,
+      description:
+        "Built a dynamic, fashion-forward Shopify eCommerce store for The Clothing Factory, featuring responsive design, seamless shopping experience, and integrated seasonal collections to showcase their trendy apparel.",
+      technologies: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Web Component",
+        "Flickity",
+        "Razorpay",
+        "Metafields",
+        "Metaobjects",
+        "Photoswipe",
+        "Liquid",
+        "Shopify",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://theclothingfactory.in",
+          icon: <Globe className="size-3" />,
+        },
+      ],
+      image: "/tcf.png",
+    },
+    {
+      title: "Spline",
+      href: "https://spline-animation.vercel.app",
+      active: true,
+      description:
+        "Developed an interactive 3D animation experience using Spline, highlighting the platform's capabilities in creating browser-based animations with intuitive design and collaborative features.",
+      technologies: [
+        "React.js",
+        "Next.js",
+        "Typescript",
+        "Three.js",
+        "Vercel",
+        "Spline",
+        "TailwindCSS",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://spline-animation.vercel.app",
+          icon: <Globe className="size-3" />,
+        },
+      ],
+      image: "/spline.png",
+    },
+    {
+      title: "Goldys Nestt",
+      href: "https://goldysnestt.com",
+      active: true,
+      description:
+        "Developed a responsive eCommerce platform for Goldy's Nestt, a ethnic wear brand, featuring seamless navigation, integrated collections, and secure shopping to enhance user engagement and sales.",
+      technologies: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Web Component",
+        "Flickity",
+        "Razorpay",
+        "Metafields",
+        "Metaobjects",
+        "Photoswipe",
+        "Liquid",
+        "Shopify",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://goldysnestt.com",
+          icon: <Globe className="size-3" />,
+        },
+      ],
+      image: "/gn.png",
+    },
+    {
+      title: "Priyanka Gill",
+      href: "https://priyankagill.com",
+      active: true,
+      description:
+        "Designed and developed a custom WordPress theme from scratch for Priyanka Gill's personal website, ensuring a responsive, SEO-optimized platform that effectively showcases her entrepreneurial journey, blog, and media features.",
+      technologies: [
+        "HTML",
+        "CSS",
+        "Animate.css",
+        "Javascript",
+        "jQuery",
+        "Bootstrap",
+        "Font Awesome",
+        "Php",
+        "ACF",
+        "Metabox",
+        "Kirki",
+        "Wordpress",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://priyankagill.com",
+          icon: <Globe className="size-3" />,
+        },
+      ],
+      image: "/pg.png",
     },
   ],
   contact: [

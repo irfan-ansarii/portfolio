@@ -36,7 +36,7 @@ const ProjectsSection = () => {
       </div>
       <div className="space-y-12 border-x overflow-hidden">
         <div className="grid grid-cols-1 sm:grid-cols-2 [&>*:nth-child(2n)]:border-r-0">
-          {DATA.projects.slice(2).map((project, id) => (
+          {DATA.projects.slice(0, 4).map((project, id) => (
             <BlurFade
               key={project.title}
               delay={BLUR_FADE_DELAY * 12 + id * 0.05}
@@ -47,10 +47,8 @@ const ProjectsSection = () => {
                 key={project.title}
                 title={project.title}
                 description={project.description}
-                dates={project.dates}
                 tags={project.technologies}
                 image={project.image}
-                video={project.video}
                 links={project.links}
               />
             </BlurFade>
@@ -62,7 +60,7 @@ const ProjectsSection = () => {
           href="/projects"
           className="flex justify-center items-center py-3 h-11 group text-xs"
         >
-          View all
+          All Projects
           <MoveRight className="size-4 transform opacity-0  transition-all group-hover:opacity-100 group-hover:translate-x-2" />
         </Link>
       </div>
