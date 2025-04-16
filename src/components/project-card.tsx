@@ -46,7 +46,7 @@ export function ProjectCard({
         href={href || "#"}
         target="_blank"
         rel="nofollow"
-        className={cn("block cursor-pointer p-4 sm:p-8 sm:pb-4", className)}
+        className={cn("block p-4 sm:p-8 sm:pb-4", className)}
       >
         {image && (
           <Image
