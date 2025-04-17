@@ -232,6 +232,31 @@ export const DATA = {
       image: "/gn-app.png",
     },
     {
+      title: "URL Shortner",
+      href: "https://url-shortner-client-eight.vercel.app/",
+      active: true,
+      description:
+        "A sleek and minimal URL shortener application that allows users to generate short, custom URLs for long links. The app features real-time redirection, analytics tracking (optional), and a clean interface built for performance and simplicity.",
+      technologies: [
+        "Next.js",
+  "Express.js",
+  "Drizzle ORM",
+  "PostgreSQL",
+  "TypeScript",
+  "REST API",
+  "NanoID",
+  "Tailwind CSS"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://url-shortner-client-eight.vercel.app/",
+          icon: <Globe className="size-3" />,
+        },
+      ],
+      image: "/link.png",
+    },
+    {
       title: "Sauga Smiles Dental",
       href: "https://saugasmilesdental.com",
       active: true,
