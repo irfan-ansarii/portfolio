@@ -10,7 +10,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} - Irfan Ansari
           </span>
           <span className="text-xs text-muted-foreground">
-            Buil with &nbsp;
+            Built with &nbsp;
             <a
               href="https://nextjs.org/"
               target="_blank"
