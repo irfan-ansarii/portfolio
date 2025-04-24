@@ -7,7 +7,6 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import { Pointer } from "@/components/magicui/pointer";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -70,7 +69,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
             <Navbar />
-            <Pointer className="fill-blue-500" />
+
             <main className="flex flex-col">{children}</main>
             <Footer />
             <div className="fixed bottom-0 inset-x-0 pointer-events-none h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background"></div>

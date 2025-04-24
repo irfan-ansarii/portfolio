@@ -15,7 +15,6 @@ import {
   SiTypescript,
   SiWordpress,
   SiX,
-  SiDrizzle,
 } from "@icons-pack/react-simple-icons";
 
 export const DATA = {
@@ -83,7 +82,7 @@ export const DATA = {
       company: "Goldys Nestt",
       title: "Full-Stack Developer",
       logoUrl: "/goldys.png",
-      start: "2021",
+      start: "2022",
       end: "Present",
       description: `- Design, develop, and optimize high-performance full-stack web applications, ensuring scalability and smooth user experiences.
         \n- Collaborate with cross-functional teams to craft innovative features, from concept to deployment, aligning with business objectives.
@@ -94,20 +93,23 @@ export const DATA = {
       `,
     },
     {
-      company: "Digiacai",
-      title: "Freelance Developer",
+      company: "DigiAcai",
+      title: "Freelance Developer (Remote)",
       logoUrl: "/digiacai.png",
       start: "2022",
       end: undefined,
-      description: `- Built and customized Shopify and WordPress websites as part of a remote development team.
-        \n- Implemented responsive designs, custom features, and third-party integrations.
-        \n- Collaborated with cross-functional teams to understand client requirements and deliver high-quality, optimized results.
-        \n- Handled performance tuning, bug fixes, and ongoing site maintenance.
+      description: `- Developed custom Shopify and WordPress websites tailored to client branding and functional requirements.​
+          \n- Built and customized themes, plugins, and third-party integrations to enhance eCommerce and CMS functionality.​
+          \n- Collaborated with designers and project managers to deliver responsive, SEO-friendly, and conversion-optimized websites.​
+          \n- Handled website migrations, performance optimization, and cross-browser testing to ensure seamless user experiences.​
+          \n- Provided ongoing technical support and maintenance to ensure smooth website operation.​
+          \n- Worked directly with clients to understand business needs, suggest improvements, and deliver high-quality solutions on time.​
+          \n- Integrated Google Analytics custom events to track user interactions, such as button clicks and form submissions, enabling data-driven insights
       `,
     },
     {
       company: "Matrix",
-      title: "Full-Stack Developer",
+      title: "Full-Stack Developer (Remote)",
       logoUrl: "/matrix.png",
       start: "2018",
       end: "2021",
@@ -175,11 +177,11 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Shopminis",
+      title: "ShopMinis.com – Coastal-Inspired E-Commerce Platform",
       href: "https://shopminis.in",
       active: true,
       description:
-        "Developed a stylish, responsive eCommerce platform for Shop Minis, a homegrown Indian brand specializing in vacation apparel. The site offers seamless navigation and showcases their latest collections, enhancing the online shopping experience.",
+        "Developed a vibrant and responsive e-commerce website for ShopMinis.com, a fashion brand offering beachwear and accessories inspired by coastal aesthetics. The platform serves as a digital storefront, showcasing the brand's curated collections and providing customers with an intuitive shopping experience.",
       technologies: [
         "HTML",
         "CSS",
@@ -232,36 +234,59 @@ export const DATA = {
       image: "/gn-app.png",
     },
     {
-      title: "URL Shortner",
-      href: "https://url-shortner-client-eight.vercel.app/",
+      title: "Digi Acai – SEO Agency Website",
+      href: "https://digiacai.com/",
       active: true,
       description:
-        "A sleek and minimal URL shortener application that allows users to generate short, custom URLs for long links. The app features real-time redirection, analytics tracking (optional), and a clean interface built for performance and simplicity.",
+        "Developed a comprehensive, user-friendly website for Digi Acai, a SEO agency in India specializing in D2C brand growth. The site serves as a digital business card and portfolio, highlighting the agency's expertise and services",
       technologies: [
-        "Next.js",
-  "Express.js",
-  "Drizzle ORM",
-  "PostgreSQL",
-  "TypeScript",
-  "REST API",
-  "NanoID",
-  "Tailwind CSS"
+        "WordPress",
+        "PHP",
+        "MySQL",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "jQuery",
       ],
       links: [
         {
           type: "Website",
-          href: "https://url-shortner-client-eight.vercel.app/",
+          href: "https://digiacai.com/",
           icon: <Globe className="size-3" />,
         },
       ],
-      image: "/link.png",
+      image: "/digiacai_web.png",
     },
     {
-      title: "Sauga Smiles Dental",
+      title: "Neha Agarwal – SEO & E-Commerce Consultant",
+      href: "https://nehaagarwal.in/",
+      active: true,
+      description:
+        "Developed a professional personal website for Neha Agarwal, an SEO pioneer and founder of Digi Acai, to establish her online presence and showcase her expertise in SEO and content marketing.",
+      technologies: [
+        "WordPress",
+        "PHP",
+        "MySQL",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "jQuery",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://nehaagarwal.in/",
+          icon: <Globe className="size-3" />,
+        },
+      ],
+      image: "/neha.png",
+    },
+    {
+      title: "Sauga Smiles Dental – Comprehensive Dental Care Website",
       href: "https://saugasmilesdental.com",
       active: true,
       description:
-        "Developed a modern, responsive wordpress website for Sauga Smiles Dental, showcasing their comprehensive dental services and facilitating easy appointment bookings to enhance patient engagement.",
+        "Developed a user-friendly, responsive website for Sauga Smiles Dental, a leading dental clinic in Saugus, MA, dedicated to providing personalized and high-quality dental care. The website serves as a digital front for the clinic, offering potential patients easy access to information about services, team, and appointment scheduling.",
       technologies: [
         "HTML",
         "CSS",
@@ -284,11 +309,36 @@ export const DATA = {
       image: "/ssd.png",
     },
     {
-      title: "The Design Atelier",
+      title: "URL Shortener App – Streamlined Link Management Web App",
+      href: "https://url-shortner-client-eight.vercel.app/",
+      active: true,
+      description:
+        "Developed a sleek and minimal URL shortener application that allows users to generate short, custom URLs for long links. The app features real-time redirection, analytics tracking, and a clean interface built for performance and simplicity.",
+      technologies: [
+        "Next.js",
+        "Express.js",
+        "Drizzle ORM",
+        "PostgreSQL",
+        "TypeScript",
+        "REST API",
+        "NanoID",
+        "Tailwind CSS",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://url-shortner-client-eight.vercel.app/",
+          icon: <Globe className="size-3" />,
+        },
+      ],
+      image: "/link.png",
+    },
+    {
+      title: "The Design Atelier – High-End Interior Design Website",
       href: "https://thedesignatelier.com",
       active: true,
       description:
-        "Crafted a refined, responsive Wordpress website for The Design Atelier, an award-winning interior design firm, to showcase their timeless residential and boutique commercial projects, emphasizing elegance and user-friendly navigation.",
+        "Designed and developed a visually compelling and user-friendly website for The Design Atelier, an award-winning interior design firm specializing in high-end residential and boutique commercial spaces. The website serves as a digital portfolio, showcasing the firm's expertise and design philosophy",
       technologies: [
         "HTML",
         "CSS",
@@ -311,11 +361,11 @@ export const DATA = {
       image: "/tda.png",
     },
     {
-      title: "Prerna Ghosh Label",
+      title: "Prerna Ghosh Label – Contemporary Fashion E-Commerce Platform",
       href: "https://prernaghoshlabel.in",
       active: true,
       description:
-        "Developed a stylish, responsive Shopify eCommerce website for Prerna Ghosh Label, a contemporary fashion brand, facilitating seamless browsing and shopping experiences for their handcrafted, made-to-order collections.",
+        "Designed and developed a sophisticated e-commerce website for Prerna Ghosh Label, a fashion brand offering contemporary women's and men's wear. The platform serves as a digital storefront, showcasing the brand's diverse collection and providing customers with an intuitive shopping experience.",
       technologies: [
         "HTML",
         "CSS",
@@ -338,11 +388,12 @@ export const DATA = {
       image: "/pgl.png",
     },
     {
-      title: "Central Burlington Dental Care",
+      title:
+        "Central Burlington Dental Care – Comprehensive Dental Services Website",
       href: "https://cbdentistry.ca",
       active: true,
       description:
-        "Developed a responsive, SEO-optimized website for Central Burlington Dental Care, featuring intuitive navigation, streamlined appointment booking, and an integrated Google Reviews widget to showcase patient feedback and build trust.",
+        "Developed a responsive, SEO-optimized website for Central Burlington Dental Care, featuring intuitive navigation, streamlined appointment booking, and an integrated Google analytics and  Reviews widget to showcase patient feedback and build trust.",
       technologies: [
         "HTML",
         "CSS",
@@ -365,11 +416,11 @@ export const DATA = {
       image: "/cb.png",
     },
     {
-      title: "The Clothing Factory",
+      title: "The Clothing Factory – Sustainable Fashion E-Commerce Website",
       href: "https://theclothingfactory.in",
       active: true,
       description:
-        "Built a dynamic, fashion-forward Shopify eCommerce store for The Clothing Factory, featuring responsive design, seamless shopping experience, and integrated seasonal collections to showcase their trendy apparel.",
+        "Developed a dynamic and responsive e-commerce website for The Clothing Factory, a fashion brand committed to sustainability by upcycling premium leftover fabrics into stylish apparel. The platform serves as a digital storefront, highlighting the brand's eco-conscious collections and collaborations with popular celebrities and influencers.",
       technologies: [
         "HTML",
         "CSS",
@@ -417,11 +468,11 @@ export const DATA = {
       image: "/spline.png",
     },
     {
-      title: "Goldys Nestt",
+      title: "Goldy's Nestt – Elegant Ethnic Wear E-Commerce Website",
       href: "https://goldysnestt.com",
       active: true,
       description:
-        "Developed a responsive eCommerce platform for Goldy's Nestt, a ethnic wear brand, featuring seamless navigation, integrated collections, and secure shopping to enhance user engagement and sales.",
+        "Developed a responsive and visually engaging e-commerce website for Goldy's Nestt, a homegrown, women-led fashion brand established in 1976. The platform serves as a digital storefront, showcasing the brand's commitment to sustainable and stylish ethnic wear.",
       technologies: [
         "HTML",
         "CSS",
@@ -445,7 +496,8 @@ export const DATA = {
       image: "/gn.png",
     },
     {
-      title: "Priyanka Gill",
+      title:
+        "PriyankaGill.com – Digital Portfolio for a Visionary Entrepreneur",
       href: "https://priyankagill.com",
       active: true,
       description:
