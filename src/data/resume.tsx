@@ -525,6 +525,30 @@ export const DATA = {
       ],
       image: "/pg.png",
     },
+    {
+      title: "Personal Portfolio ",
+      href: "https://irfanansari.vercel.app/",
+      active: true,
+      description:
+        "Designed and developed a dynamic personal portfolio website to showcase my skills, projects, and professional journey. The platform serves as a digital resume, highlighting my expertise in full-stack development and commitment to building scalable web applications.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "React",
+        "Vercel",
+        "PostgreSQL",
+        "TailwindCSS",
+        "MagicUI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://irfanansari.vercel.app/",
+          icon: <Globe className="size-3" />,
+        },
+      ],
+      image: "/portfolio.png",
+    },
   ],
   contact: [
     {
