@@ -55,26 +55,73 @@ export const DATA = {
     "Full Stack Developer with expertise in building scalable web applications, intuitive interfaces, and efficient back-end solutions. Strong problem-solving abilities, keen attention to detail, and a track record of delivering projects on time. Skilled at collaborating with cross-functional teams to achieve project goals.",
   avatarUrl: "/me.jpg",
   skills: [
-    { icon: SiReact, name: "React", href: "https://react.dev" },
-    { icon: SiNextdotjs, name: "Next.js", href: "https://nextjs.org" },
+    {
+      icon: SiReact,
+      name: "React",
+      href: "https://react.dev",
+      color: "#00d8ff",
+    },
+    {
+      icon: SiNextdotjs,
+      name: "Next.js",
+      href: "https://nextjs.org",
+      color: "#26313b",
+    },
     {
       icon: SiTypescript,
       name: "TypeScript",
       href: "https:// www.typescriptlang.org",
+      color: "#3178c6",
     },
-    { icon: SiNodedotjs, name: "Node.js", href: "https://nodejs.org" },
-    { icon: SiExpress, name: "Express", href: "https://expressjs.com" },
-    { icon: SiPrisma, name: "Prisma", href: "https://www.prisma.io" },
+    {
+      icon: SiNodedotjs,
+      name: "Node.js",
+      href: "https://nodejs.org",
+      color: "#215732",
+    },
+    {
+      icon: SiExpress,
+      name: "Express",
+      href: "https://expressjs.com",
+      color: "#002663",
+    },
+    {
+      icon: SiPrisma,
+      name: "Prisma",
+      href: "https://www.prisma.io",
+      color: "#5A67D9",
+    },
     {
       icon: SiPostgresql,
       name: "PostgreSQL",
       href: "https://www.postgresql.org",
+      color: "#346892",
     },
-    { icon: SiDocker, name: "Docker", href: "https://www.docker.com" },
-    { icon: SiTailwindcss, name: "Tailwind", href: "https://tailwindcss.com" },
-    { icon: SiPhp, name: "PHP", href: "https://www.php.net" },
-    { icon: SiWordpress, name: "WordPress", href: "https://wordpress.org" },
-    { icon: SiShopify, name: "Shopify", href: "https://rwww.shopify.com" },
+    {
+      icon: SiDocker,
+      name: "Docker",
+      href: "https://www.docker.com",
+      color: "#0db7ed",
+    },
+    {
+      icon: SiTailwindcss,
+      name: "Tailwind",
+      href: "https://tailwindcss.com",
+      color: "#00BCFF",
+    },
+    { icon: SiPhp, name: "PHP", href: "https://www.php.net", color: "#8892be" },
+    {
+      icon: SiWordpress,
+      name: "WordPress",
+      href: "https://wordpress.org",
+      color: "#21759b",
+    },
+    {
+      icon: SiShopify,
+      name: "Shopify",
+      href: "https://rwww.shopify.com",
+      color: "#96bf48",
+    },
   ],
 
   work: [
@@ -177,7 +224,7 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "ShopMinis.com – Coastal-Inspired E-Commerce Platform",
+      title: "E-Commerce Website",
       href: "https://shopminis.in",
       active: true,
       description:
@@ -203,7 +250,7 @@ export const DATA = {
       image: "/minis.png",
     },
     {
-      title: "Business & Workflow Management App",
+      title: "Workflow Management App",
       href: "https://goldys.vercel.app",
       active: true,
       description:
@@ -234,7 +281,7 @@ export const DATA = {
       image: "/gn-app.png",
     },
     {
-      title: "Digi Acai – SEO Agency Website",
+      title: "SEO Agency Website",
       href: "https://digiacai.com/",
       active: true,
       description:
@@ -258,7 +305,7 @@ export const DATA = {
       image: "/digiacai_web.png",
     },
     {
-      title: "Neha Agarwal – SEO & E-Commerce Consultant",
+      title: "SEO & E-Commerce Consultant Portfolio",
       href: "https://nehaagarwal.in/",
       active: true,
       description:
@@ -282,7 +329,7 @@ export const DATA = {
       image: "/neha.png",
     },
     {
-      title: "Sauga Smiles Dental – Comprehensive Dental Care Website",
+      title: "Comprehensive Dental Care Website",
       href: "https://saugasmilesdental.com",
       active: true,
       description:
@@ -309,7 +356,7 @@ export const DATA = {
       image: "/ssd.png",
     },
     {
-      title: "URL Shortener App – Streamlined Link Management Web App",
+      title: "Streamlined Link Management Web App",
       href: "https://url-shortner-client-eight.vercel.app/",
       active: true,
       description:
@@ -334,7 +381,7 @@ export const DATA = {
       image: "/link.png",
     },
     {
-      title: "The Design Atelier – High-End Interior Design Website",
+      title: "High-End Interior Design Website",
       href: "https://thedesignatelier.com",
       active: true,
       description:
@@ -361,7 +408,7 @@ export const DATA = {
       image: "/tda.png",
     },
     {
-      title: "Prerna Ghosh Label – Contemporary Fashion E-Commerce Platform",
+      title: "Fashion E-Commerce Website",
       href: "https://prernaghoshlabel.in",
       active: true,
       description:
@@ -388,8 +435,7 @@ export const DATA = {
       image: "/pgl.png",
     },
     {
-      title:
-        "Central Burlington Dental Care – Comprehensive Dental Services Website",
+      title: "Comprehensive Dental Services Website",
       href: "https://cbdentistry.ca",
       active: true,
       description:
@@ -416,7 +462,7 @@ export const DATA = {
       image: "/cb.png",
     },
     {
-      title: "The Clothing Factory – Sustainable Fashion E-Commerce Website",
+      title: "Sustainable Fashion E-Commerce Website",
       href: "https://theclothingfactory.in",
       active: true,
       description:
@@ -444,7 +490,7 @@ export const DATA = {
       image: "/tcf.png",
     },
     {
-      title: "Spline",
+      title: "Spline Iteractive 3D Animation",
       href: "https://spline-animation.vercel.app",
       active: true,
       description:
@@ -468,7 +514,7 @@ export const DATA = {
       image: "/spline.png",
     },
     {
-      title: "Goldy's Nestt – Elegant Ethnic Wear E-Commerce Website",
+      title: "Elegant Ethnic Wear E-Commerce Website",
       href: "https://goldysnestt.com",
       active: true,
       description:
@@ -496,8 +542,7 @@ export const DATA = {
       image: "/gn.png",
     },
     {
-      title:
-        "PriyankaGill.com – Digital Portfolio for a Visionary Entrepreneur",
+      title: "Digital Portfolio for a Visionary Entrepreneur",
       href: "https://priyankagill.com",
       active: true,
       description:
@@ -526,7 +571,7 @@ export const DATA = {
       image: "/pg.png",
     },
     {
-      title: "Personal Portfolio ",
+      title: "Personal Portfolio",
       href: "https://irfanansari.vercel.app/",
       active: true,
       description:

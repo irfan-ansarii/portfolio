@@ -4,6 +4,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 import Link from "next/link";
 
 const BLUR_FADE_DELAY = 0.05;
+
 const SkillsSection = () => {
   return (
     <section id="skills" className="container">
@@ -19,13 +20,13 @@ const SkillsSection = () => {
             <BlurFade
               key={skill.name}
               delay={BLUR_FADE_DELAY * 10 + id * 0.05}
-              className={`border-r border-b `}
+              className={`border-r border-b relative`}
             >
               <Link
                 href={skill.href || "#"}
                 target="_blank"
                 rel="nofollow"
-                className="flex gap-2 items-center justify-center opacity-40 hover:opacity-100 px-4 py-6 transition-all"
+                className="flex gap-2 text-muted-foreground items-center justify-center relative z-20 px-4 py-6 transition-all hover:text-primary transition-all"
               >
                 <skill.icon className="size-4" />
                 <span className="text-xs truncate">{skill.name}</span>
