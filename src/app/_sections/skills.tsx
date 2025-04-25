@@ -26,7 +26,8 @@ const SkillsSection = () => {
                 href={skill.href || "#"}
                 target="_blank"
                 rel="nofollow"
-                className="flex gap-2 text-muted-foreground items-center justify-center relative z-20 px-4 py-6 transition-all hover:text-primary transition-all"
+                style={{}}
+                className="flex gap-2 text-muted-foreground items-center justify-center relative z-20 px-4 py-6 hover:text-primary transition-all"
               >
                 <skill.icon className="size-4" />
                 <span className="text-xs truncate">{skill.name}</span>

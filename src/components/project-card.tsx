@@ -44,7 +44,7 @@ export function ProjectCard({
         title={title}
       />
 
-      <CardContent className="mt-4 flex flex-col px-4 sm:px-8">
+      <CardContent className="flex flex-col px-4 sm:px-8">
         <div className="space-y-1">
           {/* <time className="font-sans text-xs">{dates}</time> */}
           <div className="hidden font-sans text-xs underline print:visible">
