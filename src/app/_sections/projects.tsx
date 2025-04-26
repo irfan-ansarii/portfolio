@@ -60,8 +60,10 @@ const ProjectsSection = () => {
           href="/projects"
           className="flex justify-center items-center py-3 h-11 group text-xs"
         >
-          All Projects
-          <MoveRight className="size-4 transform opacity-0  transition-all group-hover:opacity-100 group-hover:translate-x-2" />
+          <span className="relative">
+            All Projects
+            <MoveRight className="size-4 opacity-0  transition-all absolute right-0 top-1/2 transform -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-2" />
+          </span>
         </Link>
       </div>
     </section>
