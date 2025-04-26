@@ -224,11 +224,11 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "E-Commerce Website",
+      title: "Beachwear E-Commerce Website",
       href: "https://shopminis.in",
       active: true,
       description:
-        "Developed a vibrant and responsive e-commerce website for ShopMinis.com, a fashion brand offering beachwear and accessories inspired by coastal aesthetics. The platform serves as a digital storefront, showcasing the brand's curated collections and providing customers with an intuitive shopping experience.",
+        "Developed a vibrant, vacation-inspired fashion ecommerce store. Focused on creating a fast, mobile-first, visually appealing experience with optimized checkout and global shipping capabilities.",
       technologies: [
         "HTML",
         "CSS",
@@ -254,7 +254,7 @@ export const DATA = {
       href: "https://goldys.vercel.app",
       active: true,
       description:
-        "A fully custom web app built with Next.js, Drizzle ORM, and PostgreSQL — designed to streamline operations, manage workflows, and improve team productivity with a clean UI and robust backend architecture.",
+        "Developed a fully custom web app built with Next.js, Drizzle ORM, and PostgreSQL — designed to streamline operations, manage workflows, and improve team productivity.",
       technologies: [
         "Next.js",
         "Typescript",
@@ -285,7 +285,7 @@ export const DATA = {
       href: "https://digiacai.com/",
       active: true,
       description:
-        "Developed a comprehensive, user-friendly website for Digi Acai, a SEO agency in India specializing in D2C brand growth. The site serves as a digital business card and portfolio, highlighting the agency's expertise and services",
+        "Created a high-converting website for an SEO agency targeting D2C brands. Prioritized fast loading, SEO best practices, mobile responsiveness, and a clean, professional design.",
       technologies: [
         "WordPress",
         "PHP",
@@ -309,7 +309,7 @@ export const DATA = {
       href: "https://nehaagarwal.in/",
       active: true,
       description:
-        "Developed a professional personal website for Neha Agarwal, an SEO pioneer and founder of Digi Acai, to establish her online presence and showcase her expertise in SEO and content marketing.",
+        "Designed a personal branding website for a digital marketing consultant. Integrated blog management, workshops/events listing, and lead generation forms, all optimized for search engines.",
       technologies: [
         "WordPress",
         "PHP",
@@ -329,11 +329,11 @@ export const DATA = {
       image: "/neha.png",
     },
     {
-      title: "Comprehensive Dental Care Website",
+      title: "Dental Service Website",
       href: "https://saugasmilesdental.com",
       active: true,
       description:
-        "Developed a user-friendly, responsive website for Sauga Smiles Dental, a leading dental clinic in Saugus, MA, dedicated to providing personalized and high-quality dental care. The website serves as a digital front for the clinic, offering potential patients easy access to information about services, team, and appointment scheduling.",
+        "Developed a local SEO-optimized dental clinic website. Included service pages, online appointment booking, and a friendly, welcoming design focused on building patient trust.",
       technologies: [
         "HTML",
         "CSS",
@@ -360,7 +360,7 @@ export const DATA = {
       href: "https://url-shortner-client-eight.vercel.app/",
       active: true,
       description:
-        "Developed a sleek and minimal URL shortener application that allows users to generate short, custom URLs for long links. The app features real-time redirection, analytics tracking, and a clean interface built for performance and simplicity.",
+        "Developed a sleek and minimal URL shortener application that allows users to generate short URLs. The app features real-time redirection and analytics tracking.",
       technologies: [
         "Next.js",
         "Express.js",
@@ -385,7 +385,7 @@ export const DATA = {
       href: "https://thedesignatelier.com",
       active: true,
       description:
-        "Designed and developed a visually compelling and user-friendly website for The Design Atelier, an award-winning interior design firm specializing in high-end residential and boutique commercial spaces. The website serves as a digital portfolio, showcasing the firm's expertise and design philosophy",
+        "Developed a high-end portfolio website for an interior design studio. Focused on showcasing projects with elegant layouts, strong branding, and a premium client experience.",
       technologies: [
         "HTML",
         "CSS",
@@ -412,7 +412,7 @@ export const DATA = {
       href: "https://prernaghoshlabel.in",
       active: true,
       description:
-        "Designed and developed a sophisticated e-commerce website for Prerna Ghosh Label, a fashion brand offering contemporary women's and men's wear. The platform serves as a digital storefront, showcasing the brand's diverse collection and providing customers with an intuitive shopping experience.",
+        "Built a fashion e-commerce site for a luxury label specializing in co-ord sets, sarees, and dresses. Integrated discount offers, seasonal collections, and a seamless mobile shopping experience.",
       technologies: [
         "HTML",
         "CSS",
@@ -439,7 +439,7 @@ export const DATA = {
       href: "https://cbdentistry.ca",
       active: true,
       description:
-        "Developed a responsive, SEO-optimized website for Central Burlington Dental Care, featuring intuitive navigation, streamlined appointment booking, and an integrated Google analytics and  Reviews widget to showcase patient feedback and build trust.",
+        "Developed a comprehensive dental clinic website with service pages, online appointment booking, and local SEO optimization for enhanced visibility and patient engagement.",
       technologies: [
         "HTML",
         "CSS",
@@ -466,7 +466,7 @@ export const DATA = {
       href: "https://theclothingfactory.in",
       active: true,
       description:
-        "Developed a dynamic and responsive e-commerce website for The Clothing Factory, a fashion brand committed to sustainability by upcycling premium leftover fabrics into stylish apparel. The platform serves as a digital storefront, highlighting the brand's eco-conscious collections and collaborations with popular celebrities and influencers.",
+        "Built a modern online store for a fashion brand offering a wide range of apparel and accessories. Focused on delivering a smooth shopping experience, fast performance, and responsive design across all devices.",
       technologies: [
         "HTML",
         "CSS",
@@ -494,7 +494,7 @@ export const DATA = {
       href: "https://spline-animation.vercel.app",
       active: true,
       description:
-        "Developed an interactive 3D animation experience using Spline, highlighting the platform's capabilities in creating browser-based animations with intuitive design and collaborative features.",
+        "Created a 3D interactive animation website to deliver immersive experiences, combining advanced frontend development and seamless performance.",
       technologies: [
         "React.js",
         "Next.js",
@@ -518,7 +518,7 @@ export const DATA = {
       href: "https://goldysnestt.com",
       active: true,
       description:
-        "Developed a responsive and visually engaging e-commerce website for Goldy's Nestt, a homegrown, women-led fashion brand established in 1976. The platform serves as a digital storefront, showcasing the brand's commitment to sustainable and stylish ethnic wear.",
+        "Built an elegant e-commerce store for a homegrown ethnic wear brand. Highlighted festive and summer collections, ensuring smooth checkout, fast browsing, and mobile-first responsiveness.",
       technologies: [
         "HTML",
         "CSS",
@@ -546,7 +546,7 @@ export const DATA = {
       href: "https://priyankagill.com",
       active: true,
       description:
-        "Designed and developed a custom WordPress theme from scratch for Priyanka Gill's personal website, ensuring a responsive, SEO-optimized platform that effectively showcases her entrepreneurial journey, blog, and media features.",
+        "Designed a modern personal brand website for an entrepreneur and content creator. Integrated blogs, podcast highlights, and a gallery of designer features, focused on storytelling and SEO.",
       technologies: [
         "HTML",
         "CSS",
@@ -575,7 +575,7 @@ export const DATA = {
       href: "https://irfanansari.vercel.app/",
       active: true,
       description:
-        "Designed and developed a dynamic personal portfolio website to showcase my skills, projects, and professional journey. The platform serves as a digital resume, highlighting my expertise in full-stack development and commitment to building scalable web applications.",
+        "Designed and developed a dynamic personal portfolio to showcase my skills, projects, and professional journey. The website is my digital resume, highlighting my expertise in full-stack development.",
       technologies: [
         "Next.js",
         "Typescript",

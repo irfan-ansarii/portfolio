@@ -11,7 +11,7 @@ const ProjectsPage = () => {
       <section id="work" className="container">
         <div className="relative mx-auto border-x overflow-hidden">
           <BlurFade delay={BLUR_FADE_DELAY * 11} className="p-4 sm:p-8">
-            <h2 className="text-center text-muted-foreground text-sm text-balance font-semibold tracking-tigh uppercase mb-6">
+            <h2 className="text-center text-muted-foreground text-sm text-balance font-semibold tracking-tigh uppercase mb-4 sm:mb-6">
               projects
             </h2>
 

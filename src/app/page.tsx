@@ -4,7 +4,6 @@ import WorkSection from "./_sections/work";
 import EducationSection from "./_sections/education";
 import SkillsSection from "./_sections/skills";
 import ProjectsSection from "./_sections/projects";
-import ContactSection from "./_sections/contact";
 import BlurFade from "@/components/magicui/blur-fade";
 
 export default function Page() {
@@ -12,11 +11,10 @@ export default function Page() {
     <BlurFade delay={0.2}>
       <IntroSection />
       <AboutSection />
+      <ProjectsSection />
+      <SkillsSection />
       <WorkSection />
       <EducationSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <ContactSection />
     </BlurFade>
   );
 }

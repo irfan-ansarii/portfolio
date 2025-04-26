@@ -35,13 +35,13 @@ const Navbar = () => {
                 </Link>
               </BlurFade>
               <div className="absolute w-52 right-[1px] transition duration-500 invisible group-hover:visible">
-                <div className="border-l border-b px-6 py-10 rounded-b-xl relative backdrop-blur-lg shadow-lg">
+                <div className="border-l border-b px-6 py-10 rounded-b-xl relative backdrop-blur-xl bg-background/50 shadow-lg">
                   <ul className="flex flex-col">
                     {DATA.navbar.map((item) => (
                       <li key={item.href}>
                         <Link
                           href={item.href}
-                          className="py-2 tracking-[0.2rem] uppercase flex text-sm transition font-bold text-muted-foreground hover:text-primary"
+                          className="py-2 tracking-[0.2rem] uppercase flex text-sm font-bold text-muted-foreground hover:text-primary transition-all ml-0 hover:ml-1"
                         >
                           {item.label}
                         </Link>

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 import Link from "next/link";
 import quantize from "quantize";
-
+import { FastAverageColor } from "fast-average-color";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { CardHeader, CardTitle } from "@/components/ui/card";
@@ -14,58 +14,31 @@ interface Props {
   image?: string;
   className?: string;
 }
-type RGB = [number, number, number];
 
 const ProjectImage = ({ href, className, image, title }: Props) => {
-  const [colors, setColors] = useState<RGB[] | RGB[][]>([[], []]);
+  const [color, setColor] = useState({
+    rgb: "rgb(233, 236, 239)",
+    alpha: "233, 236, 239",
+  });
 
   const handleImageLoad = (e: React.SyntheticEvent<HTMLImageElement>) => {
     const img = e.currentTarget;
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
+    const fac = new FastAverageColor();
+    const colors = fac.getColor(img, { algorithm: "simple" });
 
-    if (!ctx) return;
+    colors.value.pop();
 
-    canvas.width = 100;
-    canvas.height = Math.floor((img.height / img.width) * 100);
-    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-
-    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
-    const pixels = buildRgb(imageData);
-
-    const colorMap = quantize(pixels, 5); // you can change the number here
-    const palette = colorMap ? colorMap.palette() : [];
-
-    setColors(palette);
-  };
-
-  const buildRgb = (imageData: Uint8ClampedArray): RGB[] => {
-    const pixels: RGB[] = [];
-
-    for (let i = 0; i < imageData.length; i += 4) {
-      const r = imageData[i];
-      const g = imageData[i + 1];
-      const b = imageData[i + 2];
-      const a = imageData[i + 3];
-
-      if (a > 0) {
-        pixels.push([r, g, b]);
-      }
-    }
-
-    return pixels;
+    setColor({ ...colors, alpha: colors.value.join(",") });
   };
 
   return (
     <CardHeader
       className="relative aspect-[6/4] overflow-hidden"
       style={{
-        backgroundImage: `linear-gradient(rgba(${colors[0].join(
-          ","
-        )}), rgba(${colors[0].join(",")},.4))`,
+        backgroundImage: `linear-gradient(${color.rgb}, rgba(${color.alpha},.5))`,
       }}
     >
-      <span className="absolute backdrop-blur-xl inset-0"></span>
+      {/* <span className="absolute backdrop-blur-xl inset-0"></span> */}
 
       <Link
         href={href || "#"}

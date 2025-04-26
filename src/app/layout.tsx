@@ -7,6 +7,7 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import ContactSection from "./_sections/contact";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -71,6 +72,7 @@ export default function RootLayout({
             <Navbar />
 
             <main className="flex flex-col">{children}</main>
+            <ContactSection />
             <Footer />
             <div className="fixed bottom-0 inset-x-0 pointer-events-none h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background"></div>
           </TooltipProvider>

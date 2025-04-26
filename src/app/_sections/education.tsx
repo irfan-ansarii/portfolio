@@ -27,7 +27,7 @@ const EducationSection = () => {
         <div className="flex min-h-0 flex-col gap-y-3">
           {DATA.education.map((education, id) => (
             <BlurFade
-              key={education.school}
+              key={`${education.school}-${id}`}
               delay={BLUR_FADE_DELAY * 8 + id * 0.05}
             >
               <ResumeCard

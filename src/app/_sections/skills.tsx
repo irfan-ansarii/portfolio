@@ -1,8 +1,8 @@
+"use client";
 import React from "react";
 import { DATA } from "@/data/resume";
 import BlurFade from "@/components/magicui/blur-fade";
 import Link from "next/link";
-
 const BLUR_FADE_DELAY = 0.05;
 
 const SkillsSection = () => {
@@ -20,16 +20,15 @@ const SkillsSection = () => {
             <BlurFade
               key={skill.name}
               delay={BLUR_FADE_DELAY * 10 + id * 0.05}
-              className={`border-r border-b relative`}
+              className={`border-r border-b relative overflow-hidden`}
             >
               <Link
                 href={skill.href || "#"}
                 target="_blank"
                 rel="nofollow"
-                style={{}}
-                className="flex gap-2 text-muted-foreground items-center justify-center relative z-20 px-4 py-6 hover:text-primary transition-all"
+                className="flex gap-2  items-center justify-center relative z-20 px-4 py-6 opacity-75 hover:opacity-100 transition-opacity duration-300"
               >
-                <skill.icon className="size-4" />
+                <skill.icon className="size-4" style={{ color: skill.color }} />
                 <span className="text-xs truncate">{skill.name}</span>
               </Link>
             </BlurFade>

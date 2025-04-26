@@ -11,7 +11,6 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default async function BlogPage() {
   const posts = await getBlogPosts();
-
   return (
     <section className="container">
       <div className="border-x p-4 sm:p-8">
@@ -34,6 +33,7 @@ export default async function BlogPage() {
                 className="flex flex-col space-y-1 mb-4"
                 href={`/blog/${post.slug}`}
               >
+                <img src={post.metadata.thumbnail} />
                 <div className="w-full flex flex-col">
                   <p className="tracking-tight">{post.metadata.title}</p>
                   <p className="h-6 text-xs text-muted-foreground">
