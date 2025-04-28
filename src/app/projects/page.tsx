@@ -18,7 +18,11 @@ const ProjectsPage = () => {
             <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-full w-full bg-gradient-to-t from-background dark:from-background -z-10 from-50%"></div>
             <FlickeringGrid
               className="w-full h-full -z-20 absolute inset-0 size-full"
-              color="rgb(38,38,38)"
+              squareSize={4}
+              gridGap={6}
+              color="#60A5FA"
+              maxOpacity={0.5}
+              flickerChance={0.1}
             />
             <span className="absolute inset-0 backdrop-blur-3xl bg-background/60 -z-10"></span>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">

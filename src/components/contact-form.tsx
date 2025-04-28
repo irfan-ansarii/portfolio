@@ -5,6 +5,7 @@ import { CheckCircle, Loader, Send, TriangleAlert, X } from "lucide-react";
 import BlurFade from "./magicui/blur-fade";
 
 const ContactForm = () => {
+  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -23,21 +24,30 @@ const ContactForm = () => {
 
   return (
     <div
-      className="border-x border-t relative"
-      onMouseEnter={() => setShowAlert(true)}
+      className="border-x border-t relative p-4 sm:p-8 bg-gradient-to-b from-secondary to-transparent"
+      // onMouseEnter={() => setShowAlert(true)}
       onMouseLeave={() => setShowAlert(false)}
     >
-      <form onSubmit={handleSubmit} className="flex">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-2">
+        <input
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          type="email"
+          name="message"
+          placeholder="Enter your email here..."
+          className="px-4 py-3 h-11 focus:bg-secondary hover:bg-secondary bg-background border text-xs outline-none transition duration-300"
+        />
         <input
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           type="text"
           name="message"
-          placeholder="Send me a message..."
-          className="flex-[1_1_0] px-8 bg-background text-sm outline-none"
+          placeholder="Enter your message here..."
+          className="px-4 py-3 h-11 bg-background hover:bg-secondary focus:bg-secondary border text-xs outline-none transition duration-300"
         />
+
         <button
-          className={`px-4 w-1/4 border-l outline-none h-14 bg-background transition-all text-sm inline-flex items-center justify-center gap-2 focus:bg-secondary ${
+          className={`flex w-full h-11 bg-secondary self-stretch border justify-center items-center group text-xs text-muted-foreground gap-2 ${
             disabled ? "text-muted-foreground" : "hover:bg-secondary/80"
           }`}
           disabled={disabled}
