@@ -25,6 +25,10 @@ const Navbar = () => {
                 <Home className="size-5" />
               </Link>
             </BlurFade>
+
+            {/* sticky nav starts here */}
+            {/* <StickyNav /> */}
+            {/* sticky nav ends here */}
             <div className="group">
               <BlurFade delay={0.2}>
                 <Link
@@ -34,6 +38,7 @@ const Navbar = () => {
                   <Grip className="size-6" />
                 </Link>
               </BlurFade>
+
               <div className="absolute w-52 right-[1px] transition duration-500 invisible group-hover:visible">
                 <div className="border-l border-b px-6 py-10 rounded-b-xl relative backdrop-blur-xl bg-background/50 shadow-lg">
                   <ul className="flex flex-col">

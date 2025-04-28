@@ -4,7 +4,7 @@ import { ProjectCard } from "@/components/project-card";
 import FlickeringGrid from "@/components/magicui/flickering-grid";
 import BlurFade from "@/components/magicui/blur-fade";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 const BLUR_FADE_DELAY = 0.05;
 const ProjectsSection = () => {
   return (
@@ -66,7 +66,7 @@ const ProjectsSection = () => {
         >
           <span className="relative">
             All Projects
-            <ArrowRight className="size-4 opacity-0  transition-all absolute left-full top-1/2 transform -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-2" />
+            <ArrowUpRight className="size-4 opacity-0  transition-all absolute left-full top-1/2 transform -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-2" />
           </span>
         </Link>
       </div>

@@ -14,7 +14,7 @@ const AboutSection = () => {
           </BlurFade>
 
           <BlurFade delay={BLUR_FADE_DELAY * 4}>
-            <Markdown className="prose max-w-full text-pretty font-sans dark:prose-invert">
+            <Markdown className="prose text-muted-foreground max-w-full text-pretty font-sans dark:prose-invert">
               {DATA.summary}
             </Markdown>
           </BlurFade>

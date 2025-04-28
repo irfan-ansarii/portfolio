@@ -33,6 +33,16 @@
     --ring: 0 0% 3.9%;
 
     --radius: 0.5rem;
+
+    --color-1: oklch(66.2% 0.225 25.9);
+
+    --color-2: oklch(60.4% 0.26 302);
+
+    --color-3: oklch(69.6% 0.165 251);
+
+    --color-4: oklch(80.2% 0.134 225);
+
+    --color-5: oklch(90.7% 0.231 133);
   }
 
   .dark {
@@ -63,9 +73,16 @@
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
+    --color-1: oklch(66.2% 0.225 25.9);
+    --color-2: oklch(60.4% 0.26 302);
+    --color-3: oklch(69.6% 0.165 251);
+    --color-4: oklch(80.2% 0.134 225);
+    --color-5: oklch(90.7% 0.231 133);
   }
   .theme {
     --animate-aurora: aurora 8s ease-in-out infinite alternate;
+    --rainbow: rainbow var(--speed, 2s) infinite linear;
+    --animate-shine: shine var(--duration) infinite linear;
   }
 }
 
@@ -94,6 +111,10 @@ code {
   @apply text-sm md:text-base !leading-loose;
 }
 
+input:autofill,
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px var(--accent) inset !important;
+}
 pre > code {
   counter-reset: line;
 }
@@ -167,6 +188,25 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
     100% {
       backgroundposition: 0% 50%;
       transform: rotate(-5deg) scale(0.9);
+    }
+  }
+  @keyframes rainbow {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 200%;
+    }
+  }
+  @keyframes shine {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    to {
+      background-position: 0% 0%;
     }
   }
 }

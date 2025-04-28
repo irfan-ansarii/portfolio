@@ -3,13 +3,13 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
+import { JetBrains_Mono as JetBrains } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import ContactSection from "./_sections/contact";
 
-const fontSans = FontSans({
+const font = JetBrains({
   subsets: ["latin"],
   variable: "--font-sans",
 });
@@ -64,7 +64,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          font.variable
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="light">
