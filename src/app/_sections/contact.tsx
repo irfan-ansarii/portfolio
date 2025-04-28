@@ -35,7 +35,7 @@ const ContactSection = () => {
                   Have a question, project idea, or just want to say hello?
                   I&apos;m always open to discussing new projects, creative
                   ideas, or opportunities to be part of your vision. Do reach
-                  out to me and I'll be happy to connect.
+                  out to me and I&apos;ll be happy to connect.
                 </p>
               </div>
             </div>
