@@ -4,6 +4,7 @@ import { CheckCircle, Loader, SendHorizonal, X } from "lucide-react";
 
 import BlurFade from "./magicui/blur-fade";
 import { Input } from "./ui/input";
+import { sendEmail } from "@/lib/utils";
 
 const values = { email: "", message: "" };
 
@@ -14,17 +15,28 @@ const ContactForm = () => {
 
   const disabled = !value.message || !value.email || loading;
 
-  const handleSubmit = (v: FormEvent<HTMLFormElement>): void => {
+  const handleSubmit = async (v: FormEvent<HTMLFormElement>) => {
     if (typeof window !== "undefined")
       window.localStorage.setItem("form-submitted", "true");
 
     v.preventDefault();
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+
+    const message = `
+    <p>Email: ${value.email}</p>
+    <p>Email: ${value.message}</p>
+    `;
+
+    try {
+      await sendEmail({ message });
+
       setSuccess(true);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
       setValue(values);
-    }, 3000);
+    }
   };
 
   useEffect(() => {

@@ -1,3 +1,4 @@
+import { Resend } from "resend";
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -35,3 +36,14 @@ export function formatDate(date: string) {
     return `${fullDate} (${yearsAgo}y ago)`;
   }
 }
+
+export const sendEmail = async ({ message }: { message: string }) => {
+  const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
+
+  await resend.emails.send({
+    from: "Acme <onboarding@resend.dev>",
+    to: ["irfanansari2114@gmail.com"],
+    subject: "New message",
+    html: message,
+  });
+};

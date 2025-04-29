@@ -12,7 +12,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 const glowVariants = {
   initial: {
     opacity: 0,
-    scale: 0,
+    scaleY: 0,
     transition: {
       opacity: { duration: 0.5, type: "linear" },
       scale: { duration: 0.3, type: "linear" },
@@ -20,7 +20,7 @@ const glowVariants = {
   },
   hover: {
     opacity: 1,
-    scale: 1,
+    scaleY: 1,
     transition: {
       opacity: { duration: 0.1, type: "linear" },
       scale: { duration: 0.3, type: "linear" },
@@ -51,9 +51,9 @@ const HoverNav = () => {
         variants={glowVariants}
         animate={active ? "hover" : "initial"}
         style={{
-          transformOrigin: "top right",
+          transformOrigin: "top",
           opacity: 0,
-          scale: 0,
+          scaleY: 0,
         }}
       >
         <div className="border-l border-b px-6 py-10 rounded-b-xl relative backdrop-blur-xl bg-background/50 shadow-lg">
