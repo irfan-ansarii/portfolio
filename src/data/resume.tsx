@@ -1,14 +1,17 @@
 import { Github, Globe, Linkedin } from "lucide-react";
 import {
   SiDocker,
+  SiDrizzle,
   SiExpress,
   SiGithub,
   SiInstagram,
+  SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
   SiPhp,
   SiPostgresql,
   SiPrisma,
+  SiPython,
   SiReact,
   SiShopify,
   SiTailwindcss,
@@ -92,9 +95,21 @@ export const DATA = {
       color: "#5A67D9",
     },
     {
+      icon: SiDrizzle,
+      name: "Drizzle",
+      href: "https://orm.drizzle.team/",
+      color: "#5A67D9",
+    },
+    {
       icon: SiPostgresql,
       name: "PostgreSQL",
       href: "https://www.postgresql.org",
+      color: "#346892",
+    },
+    {
+      icon: SiMongodb,
+      name: "Mongodb",
+      href: "https://www.mongodb.com/",
       color: "#346892",
     },
     {
@@ -104,12 +119,23 @@ export const DATA = {
       color: "#0db7ed",
     },
     {
+      icon: SiGithub,
+      name: "Github",
+      href: "https://github.com/",
+      color: "#0db7ed",
+    },
+    {
       icon: SiTailwindcss,
       name: "Tailwind",
       href: "https://tailwindcss.com",
       color: "#00BCFF",
     },
-    { icon: SiPhp, name: "PHP", href: "https://www.php.net", color: "#8892be" },
+    {
+      icon: SiPython,
+      name: "Python",
+      href: "https://www.python.org/",
+      color: "#8892be",
+    },
     {
       icon: SiWordpress,
       name: "WordPress",
@@ -119,7 +145,7 @@ export const DATA = {
     {
       icon: SiShopify,
       name: "Shopify",
-      href: "https://rwww.shopify.com",
+      href: "https://www.shopify.com",
       color: "#96bf48",
     },
   ],
