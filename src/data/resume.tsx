@@ -600,21 +600,34 @@ export const DATA = {
       name: "Instagram",
       url: "https://instagram.com/",
       icon: SiInstagram,
+      gradient:
+        "radial-gradient(circle, rgba(219,39,119,0.15) 0%, rgba(190,18,60,0.06) 50%, rgba(190,18,60,0) 100%)",
+      color: "group-hover:text-pink-500",
     },
     {
       name: "X",
       url: "https://x.com/",
       icon: SiX,
+      gradient:
+        "radial-gradient(circle, rgba(23,23,23,0.15) 0%, rgba(23,23,23,0.06) 50%, rgba(23,23,23,0) 100%)",
+      color: "group-hover:text-white",
     },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in",
       icon: Linkedin,
+      gradient:
+        "radial-gradient(circle, rgba(59,130,246,0.15) 0%, rgba(37,99,235,0.06) 50%, rgba(29,78,216,0) 100%)",
+
+      color: "group-hover:text-blue-500",
     },
     {
       name: "GitHub",
       url: "https://github.com/irfan-ansarii/",
       icon: SiGithub,
+      gradient:
+        "radial-gradient(circle, rgba(249,115,22,0.15) 0%, rgba(234,88,12,0.06) 50%, rgba(194,65,12,0) 100%)",
+      color: "text-blue-500",
     },
   ],
 } as const;

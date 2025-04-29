@@ -3,6 +3,7 @@ import React from "react";
 import { DATA } from "@/data/resume";
 import BlurFade from "@/components/magicui/blur-fade";
 import Link from "next/link";
+
 const BLUR_FADE_DELAY = 0.05;
 
 const SkillsSection = () => {

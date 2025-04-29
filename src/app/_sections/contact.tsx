@@ -1,11 +1,13 @@
 import React from "react";
 import { DATA } from "@/data/resume";
-import { ExternalLink } from "lucide-react";
+
 import FlickeringGrid from "@/components/magicui/flickering-grid";
 import ContactForm from "@/components/contact-form";
 import BlurFade from "@/components/magicui/blur-fade";
+import Link from "next/link";
 
 const BLUR_FADE_DELAY = 0.05;
+
 const ContactSection = () => {
   return (
     <BlurFade delay={0.5}>
@@ -48,19 +50,26 @@ const ContactSection = () => {
         <div className="grid grid-cols-4 border-x border-t divide-x">
           {DATA.contact.map((con, id) => (
             <BlurFade key={con.name} delay={BLUR_FADE_DELAY * 14 + id * 0.05}>
-              <a
+              <Link
                 key={con.name}
                 href={con.url}
                 target="_blank"
-                className="px-4 py-4 relative group flex justify-center"
+                className="px-4 py-4 relative group flex items-center justify-center  aspect-square sm:aspect-auto overflow-hidden group"
               >
-                <div className="opacity-20 transition-opacity">
+                <span
+                  className="absolute inset-0 z-0 pointer-events-none opacity-0 group-hover:opacity-100 scale-50 group-hover:scale-150 transition duration-300"
+                  style={{
+                    background: con.gradient,
+
+                    borderRadius: "16px",
+                  }}
+                />
+                <div
+                  className={`transition duration-300 text-primary ${con.color}`}
+                >
                   <con.icon className="size-5" />
                 </div>
-                <div className="absolute inset-0 bottom-0 group-hover:opacity-100 backdrop-blur-2xl opacity-0 bg-secondary/80 transition-opacity flex items-center justify-center">
-                  <ExternalLink className="size-5" />
-                </div>
-              </a>
+              </Link>
             </BlurFade>
           ))}
         </div>

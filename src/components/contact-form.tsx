@@ -24,7 +24,7 @@ const ContactForm = () => {
       setLoading(false);
       setSuccess(true);
       setValue(values);
-    }, 1000);
+    }, 3000);
   };
 
   useEffect(() => {
@@ -36,7 +36,10 @@ const ContactForm = () => {
   return (
     <div className="border-x border-t p-4 sm:p-8 relative">
       <div className="max-w-md mx-auto bg-background">
-        <form onSubmit={handleSubmit} className="flex flex-col gap-2 relative">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-2 relative bg-background"
+        >
           {success && (
             <span className="absolute inset-0 bg-background/50"></span>
           )}
@@ -46,7 +49,8 @@ const ContactForm = () => {
             type="email"
             name="email"
             placeholder="Email*"
-            className="py-3 bg-transparent transition duration-300 text-xs"
+            className="py-3 bg-background transition duration-300 text-xs"
+            id="move"
           />
 
           <Input
@@ -55,7 +59,7 @@ const ContactForm = () => {
             type="text"
             name="message"
             placeholder="Type here..."
-            className="py-3 bg-transparent transition duration-300 text-xs"
+            className="py-3 bg-background transition duration-300 text-xs"
           />
 
           <button
@@ -80,8 +84,9 @@ const ContactForm = () => {
           >
             <CheckCircle className="shrink-0 inline size-4 me-2" />
             <span className="sr-only">Info</span>
-            <div className="pr-4 truncate">
-              Thankyou for you message, I will get back to you soon!
+            <div className="pr-4">
+              <p className="font-semibold">Thankyou for you message,</p>
+              <p>I will get back to you soon!</p>
             </div>
             <button
               className="absolute text-muted-foreground opacity-50 hover:opacity-80 transition-opacity inset-y-0 right-4"
