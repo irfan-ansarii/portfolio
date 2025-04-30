@@ -1,13 +1,14 @@
-import { ThemeProvider } from "@/components/theme-provider";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { DATA } from "@/data/resume";
+import "./globals.css";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { JetBrains_Mono as JetBrains } from "next/font/google";
-import "./globals.css";
+import { DATA } from "@/data/resume";
+
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import ContactSection from "./_sections/contact";
+import { ThemeProvider } from "@/components/theme-provider";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { JetBrains_Mono as JetBrains } from "next/font/google";
 
 const font = JetBrains({
   subsets: ["latin"],
