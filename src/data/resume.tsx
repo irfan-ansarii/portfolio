@@ -27,20 +27,20 @@ export const DATA = {
       href: "/#about",
     },
     {
-      label: "Work",
-      href: "/#work",
-    },
-    {
-      label: "Education",
-      href: "/#education",
+      label: "Projects",
+      href: "/#projects",
     },
     {
       label: "Skills",
       href: "/#skills",
     },
     {
-      label: "Projects",
-      href: "/#projects",
+      label: "Work",
+      href: "/#work",
+    },
+    {
+      label: "Education",
+      href: "/#education",
     },
     {
       label: "Contact",
@@ -73,7 +73,7 @@ export const DATA = {
     {
       icon: SiTypescript,
       name: "TypeScript",
-      href: "https:// www.typescriptlang.org",
+      href: "https://www.typescriptlang.org",
       color: "#3178c6",
     },
     {
