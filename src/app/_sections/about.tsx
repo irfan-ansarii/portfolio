@@ -10,7 +10,9 @@ const AboutSection = () => {
       <div className="border-x border-t p-4 sm:p-8">
         <div className="space-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 3}>
-            <h2 className="text-xl font-bold">About</h2>
+            <h2 className="text-xl font-bold tracking-tighter sm:text-3xl">
+              About
+            </h2>
           </BlurFade>
 
           <BlurFade delay={BLUR_FADE_DELAY * 4}>
