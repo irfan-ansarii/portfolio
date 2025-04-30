@@ -5,6 +5,7 @@ import EducationSection from "./_sections/education";
 import SkillsSection from "./_sections/skills";
 import ProjectsSection from "./_sections/projects";
 import BlurFade from "@/components/magicui/blur-fade";
+import { WobbleRoot, Wobble } from "@/components/wobble";
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
       <IntroSection />
       <AboutSection />
       <ProjectsSection />
+
       <SkillsSection />
       <WorkSection />
       <EducationSection />

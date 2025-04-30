@@ -1,6 +1,7 @@
 "use client";
 import React, { FormEvent, useEffect, useState } from "react";
 import { CheckCircle, Loader, SendHorizonal, X } from "lucide-react";
+import { sendGAEvent } from "@next/third-parties/google";
 
 import BlurFade from "./magicui/blur-fade";
 import { Input } from "./ui/input";
@@ -16,6 +17,11 @@ const ContactForm = () => {
   const disabled = !value.message || !value.email || loading;
 
   const handleSubmit = async (v: FormEvent<HTMLFormElement>) => {
+    sendGAEvent("event", "contact_form", {
+      category: "Contact",
+      label: value.email,
+    });
+
     if (typeof window !== "undefined")
       window.localStorage.setItem("form-submitted", "true");
 

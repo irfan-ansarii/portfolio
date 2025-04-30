@@ -2,6 +2,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { DATA } from "@/data/resume";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -62,6 +63,8 @@ export default function RootLayout({
       suppressHydrationWarning
       className="scroll-smooth scroll-p-[63px]"
     >
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
+
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",

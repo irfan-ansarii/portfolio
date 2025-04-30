@@ -38,8 +38,6 @@ const ProjectImage = ({ href, className, image, title }: Props) => {
         backgroundImage: `linear-gradient(${color.rgb}, rgba(${color.alpha},.5))`,
       }}
     >
-      {/* <span className="absolute backdrop-blur-xl inset-0"></span> */}
-
       <Link
         href={href || "#"}
         target="_blank"
